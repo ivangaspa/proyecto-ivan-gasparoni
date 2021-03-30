@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Ingeniería Médica</title> 
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="img/im_icono.png"> <!-- Agrego icono de pestaña del navegador -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+<body>
+   
+    <header>
+        <nav class="navbar">
+            <a class="navbar__logo" href="../index.html"><img src="../img/logo_im.png" alt="logo_im" width="200"/></a>
+           <ul class="navbar__list">
+                <li><a class="navbar__link" href="../index.html">Inicio</a></li>
+                <li><a class="navbar__link" href="empresa.html">Empresa</a></li>
+                <li><a class="navbar__link" href="productos.html">Productos</a></li>
+                <li><a class="navbar__link" href="servicios.html">Servicios</a></li>
+                <li><a class="navbar__link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contactgrid">
+        <h1 id="fuenteh1light">Contacto</h1>
+        <p class="contactgrid__p">
+            ¿Quiere consultarnos algo en profundidad? Estaremos encantados de responder a sus preguntas en el marco de una asesoría personal . Tras el análisis inicial de sus procesos, nuestros expertos le enviarán una oferta adaptada a sus necesidades. También le recomendaremos cursos de formación avanzada adecuados para sus empleados y le proporcionaremos asesoramiento acerca de la gestión de calidad, planificación de inversiones y seguridad informática.
+        </p>
+        <form class="contactgrid__formgrid" action="">
+        
+            <div class="contactgrid__formgrid--name">
+                <label for="name">Nombre:</label>
+                <input class="contactgrid__formgrid--textinputstyle" type="text" name="name" id="name" placeholder="John">
+            </div>
+    
+            <div class="contactgrid__formgrid--surname">
+                <label for="apellido">Apellido:</label>
+                <input class="contactgrid__formgrid--textinputstyle" type="text" name="apellido" id="apellido" placeholder="Smith">
+            </div>
+    
+            <div class="contactgrid__formgrid--mail">
+                <label for="email">Correo electrónico:</label>
+                <input class="contactgrid__formgrid--textinputstyle" type="email" name="email" id="email" placeholder="Ej:johnsmith@gmail.com">
+            </div>
+            
+            <div class="contactgrid__formgrid--gender">
+                <label for="sex">Hombre</label>
+                <input class="contactgrid__formgrid--radiostyle" type="radio" name="sex" value="hombre"/>
+                <label for="sex">Mujer</label>
+                <input class="contactgrid__formgrid--radiostyle" type="radio" name="sex" value="mujer"/>
+                <label for="sex">Otro</label>
+                <input class="contactgrid__formgrid--radiostyle" type="radio" name="sex" value="otro"/>
+            </div>
+
+            <div class="contactgrid__formgrid--combobox">
+                <label for="tipoconsulta">Motivo de su consulta:</label>
+                <select class="contactgrid__formgrid--combostyle" name="tipoconsulta">
+                    <option value="C">Cotizaciones</option>
+                    <option value="G">Garantía</option>
+                    <option value="S">Servicio Técnico</option>
+                    <option value="R">Reclamo</option>
+                    <option value="O">Otros</option>
+                </select>
+            </div>
+
+            <div class="contactgrid__formgrid--textbox">
+                <!-- <label for="consulta">Escriba su consulta:</label> -->
+                <textarea class="contactgrid__formgrid--textareastyle" name="consulta" id="consulta" cols="40" rows="15" placeholder="Escriba su consulta..."></textarea>
+            </div>
+
+            <div class="contactgrid__formgrid--newsletter">
+                <label for="newwsletter">Desea suscribirse a nuestro newsletter?</label>
+                <input class="contactgrid__formgrid--checkstyle" type="checkbox" name="newsletter" value="1" />
+            </div>
+
+            <div class="contactgrid__formgrid--buttons">
+                <input class="contactgrid__formgrid--buttonstyle" type="reset" name="" id="">
+                <input class="contactgrid__formgrid--buttonstyle" type="submit" name="" id="">
+            </div> 
+        </form>
+        
+    </main>
+
+    <footer>
+        <div class="footergrid">
+    
+            <div class="footergrid__item1">
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1602.378086775274!2d-62.252665674764074!3d-38.705801173323735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1614532754200!5m2!1ses-419!2sar" width="200" height="90" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                 </div>
+                 <p>Tel: +54 11 12345678. Calle 123,</p>
+                 <p>CP8000, Bahía Blanca, Buenos Aires</p>
+            </div>
+
+            <div class="footergrid__item2">
+                <a href="../index.html"><img class="footergrid__logo" src="../img/logo_im.png" alt="logo_im" width="120"/></a>
+                <ul class="footergrid__item2--columnflex">
+                    <li><a class="footergrid__item2--linkstyle" href="../index.html">Inicio</a></li>
+                    <li><a class="footergrid__item2--linkstyle" href="empresa.html">Empresa</a></li>
+                    <li><a class="footergrid__item2--linkstyle" href="productos.html">Productos</a></li>
+                    <li><a class="footergrid__item2--linkstyle" href="servicios.html">Servicios</a></li>
+                    <li><a class="footergrid__item2--linkstyle" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footergrid__item3">
+                <div class="footergrid__item3--paddingflex">
+                    <p>Seguinos en redes sociales!</p>
+                    <a target="blank" href="http://facebook.com"><img src="../img/logo_facebook.png" alt="logo-facebook" height="20"/></a>
+                    <a target="blank" href="http://instagram.com"><img src="../img/logo_instagram.png" alt="logo-instagram" height="20"/></a>
+                    <a target="blank" href="http://twitter.com"><img src="../img/logo_tweeter.png" alt="logo-tweeter" height="20"/></a>
+                </div>
+                
+                <div class="footergrid__item3--paddingflex">
+                    <p>Realizá tus consultas por Whatsapp</p>
+                    <a target="blank" href="http://whatsapp.com"><img src="../img/logo_whatsapp.png" alt="logo-whatsapp" height="20"/></a>
+                </div>
+
+                <div class="footergrid__item3--paddingflex">
+                    <p>Solicitá tu presupuesto por mail</p>
+                    <a target="blank" href="http://outlook.com"><img src="../img/logo_mail.png" alt="logo-mail" height="20"/></a>
+                </div>
+
+            </div>
+
+            <div class="footergrid__item4">
+                <p>Todos los derechos reservados. 2021 Ingeniería Médica©</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

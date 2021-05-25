@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Ingeniería Médica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="✅ Somos una empresa lider que cuenta con un amplio e importante portfolio de productos, servicios y soluciones cuya mayor preocupacion es la satisfaccion del cliente."> 
+    <meta name="keywords" content=" electromedicina, covid19, respiradores, medicina, ingeniería, insumos, hospitalarios, bioingeniería, aparatología medica, protección, salud, coronavirus, servicio tecnico, radiografia, ecografia, anestesia, tomografo, mamografo, equipamiento medico" >
+    <meta name="author" content="ivan Gasparoni" >
+    <meta name="copyright" content="Sitio de demostración con propósitos educativos">
+
+    <title>Ingeniería Médica | 📞 Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="img/im_icono.png"> <!-- Agrego icono de pestaña del navegador -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="icon" href="../img/im_icono.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
 <body>
-   
+
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -32,8 +40,8 @@
                         Productos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="productos.html#anestesia">Anestesia</a></li>
                       <li><a class="dropdown-item" href="productos.html#respiradores">Respiradores</a></li>
+                      <li><a class="dropdown-item" href="productos.html#anestesia">Anestesia</a></li>
                       <li><a class="dropdown-item" href="productos.html#incubadoras">Incubadoras</a></li>
                       <li><a class="dropdown-item" href="productos.html#monitores">Monitores</a></li>
                       <li><a class="dropdown-item" href="productos.html#ecografos">Ecografos</a></li>
@@ -52,110 +60,126 @@
           </nav>
     </header>
 
-    <main class="contactgrid">
-        <h1 id="fuenteh1light">Contacto</h1>
-        <p class="contactgrid__p">
-            ¿Quiere consultarnos algo en profundidad? Estaremos encantados de responder a sus preguntas en el marco de una asesoría personal . Tras el análisis inicial de sus procesos, nuestros expertos le enviarán una oferta adaptada a sus necesidades. También le recomendaremos cursos de formación avanzada adecuados para sus empleados y le proporcionaremos asesoramiento acerca de la gestión de calidad, planificación de inversiones y seguridad informática.
+    <main class="contact">
+      <div class="container">
+        <h1 id="fuenteh1light" class=" my-4">Contacto</h1>
+        <p class="contact__p container">
+            ¿Quiere consultarnos algo en profundidad? Estaremos encantados de responder a sus preguntas en el marco de una asesoría personal. Tras el análisis inicial de sus procesos, nuestros expertos le enviarán una oferta adaptada a sus necesidades. También le recomendaremos cursos de formación avanzada adecuados para sus empleados.
         </p>
-        <form class="contactgrid__formgrid" action="">
-        
-            <div class="contactgrid__formgrid--name">
-                <label for="name">Nombre:</label>
-                <input class="contactgrid__formgrid--textinputstyle" type="text" name="name" id="name" placeholder="John">
-            </div>
-    
-            <div class="contactgrid__formgrid--surname">
-                <label for="apellido">Apellido:</label>
-                <input class="contactgrid__formgrid--textinputstyle" type="text" name="apellido" id="apellido" placeholder="Smith">
-            </div>
-    
-            <div class="contactgrid__formgrid--mail">
-                <label for="email">Correo electrónico:</label>
-                <input class="contactgrid__formgrid--textinputstyle" type="email" name="email" id="email" placeholder="Ej:johnsmith@gmail.com">
-            </div>
-            
-            <div class="contactgrid__formgrid--gender">
-                <label for="sex">Hombre</label>
-                <input class="contactgrid__formgrid--radiostyle" type="radio" name="sex" value="hombre"/>
-                <label for="sex">Mujer</label>
-                <input class="contactgrid__formgrid--radiostyle" type="radio" name="sex" value="mujer"/>
-                <label for="sex">Otro</label>
-                <input class="contactgrid__formgrid--radiostyle" type="radio" name="sex" value="otro"/>
-            </div>
-
-            <div class="contactgrid__formgrid--combobox">
-                <label for="tipoconsulta">Motivo de su consulta:</label>
-                <select class="contactgrid__formgrid--combostyle" name="tipoconsulta">
-                    <option value="C">Cotizaciones</option>
-                    <option value="G">Garantía</option>
-                    <option value="S">Servicio Técnico</option>
-                    <option value="R">Reclamo</option>
-                    <option value="O">Otros</option>
-                </select>
-            </div>
-
-            <div class="contactgrid__formgrid--textbox">
-                <!-- <label for="consulta">Escriba su consulta:</label> -->
-                <textarea class="contactgrid__formgrid--textareastyle" name="consulta" id="consulta" cols="40" rows="15" placeholder="Escriba su consulta..."></textarea>
-            </div>
-
-            <div class="contactgrid__formgrid--newsletter">
-                <label for="newwsletter">Desea suscribirse a nuestro newsletter?</label>
-                <input class="contactgrid__formgrid--checkstyle" type="checkbox" name="newsletter" value="1" />
-            </div>
-
-            <div class="contactgrid__formgrid--buttons">
-                <input class="contactgrid__formgrid--buttonstyle" type="reset" name="" id="">
-                <input class="contactgrid__formgrid--buttonstyle" type="submit" name="" id="">
-            </div> 
-        </form>
-        
+        <div class="row px-2 justify-content-between">
+          <div class="contact__img col-xl-6"></div>
+          <form class="contact__form col-xl-5" action="">
+              <div class="contact__form--name">
+                  <label class="ps-1" for="name">Nombre:</label>
+                  <input class="contact__form--textinputstyle" type="text" name="name" id="name" placeholder=" John">
+              </div>
+      
+              <div class="contact__form--surname">
+                  <label class="ps-1" for="apellido">Apellido:</label>
+                  <input class="contact__form--textinputstyle" type="text" name="apellido" id="apellido" placeholder=" Smith">
+              </div>
+      
+              <div class="contact__form--mail">
+                  <label class="ps-1" for="email">Correo electrónico:</label>
+                  <input class="contact__form--textinputstyle" type="email" name="email" id="email" placeholder=" Ej: johnsmith@gmail.com">
+              </div>
+              
+              <div class="contact__form--gender">
+                  <label for="sex">Hombre</label>
+                  <input class="contact__form--radiostyle" type="radio" name="sex" value="hombre"/>
+                  <label for="sex">Mujer</label>
+                  <input class="contact__form--radiostyle" type="radio" name="sex" value="mujer"/>
+                  <label for="sex">Otro</label>
+                  <input class="contact__form--radiostyle" type="radio" name="sex" value="otro"/>
+              </div>
+  
+              <div class="contact__form--combobox">
+                  <label class="ps-1" for="tipoconsulta">Motivo de su consulta:</label>
+                  <select class="contact__form--combostyle" name="tipoconsulta">
+                      <option value="C">Cotizaciones</option>
+                      <option value="G">Garantía</option>
+                      <option value="S">Servicio Técnico</option>
+                      <option value="R">Reclamo</option>
+                      <option value="O">Otros</option>
+                  </select>
+              </div>
+  
+              <div class="contact__form--textbox">
+                  <textarea class="contact__form--textareastyle" name="consulta" id="consulta" cols="10" rows="15" placeholder=" Escriba su consulta..."></textarea>
+              </div>
+  
+              <div class="contact__form--newsletter">
+                  <label for="newwsletter">Desea suscribirse a nuestro newsletter?</label>
+                  <input class="contact__form--checkstyle" type="checkbox" name="newsletter" value="1" />
+              </div>
+  
+              <div class="contact__form--buttons mx-auto">
+                  <input class="contact__form--buttonstyle" type="reset" name="" id="">
+                  <input class="contact__form--buttonstyle" type="submit" name="" id="">
+              </div> 
+          </form>
+        </div>
+      </div>
     </main>
-
     <footer>
         <div class="footergrid">
-    
-            <div class="footergrid__item1">
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1602.378086775274!2d-62.252665674764074!3d-38.705801173323735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1614532754200!5m2!1ses-419!2sar" width="200" height="90" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                 </div>
-                 <p>Tel: +54 11 12345678. Calle 123,</p>
-                 <p>CP8000, Bahía Blanca, Buenos Aires</p>
-            </div>
+            <div class="row pt-5 me-0">
+              <div class="col-12 col-lg-4 text-center">
+                <div class="footergrid__mapframe mx-auto mb-3 mb-lg-0 ps-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1602.378086775274!2d-62.252665674764074!3d-38.705801173323735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1614532754200!5m2!1ses-419!2sar"   style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <p>Tel: +54 11 12345678. Calle 123,</p>
+                <p>CP8000, Bahía Blanca, Buenos Aires</p>
+              </div>
 
-            <div class="footergrid__item2">
-                <a href="../index.html"><img class="footergrid__logo" src="../img/logo_im.png" alt="logo_im" width="120"/></a>
-                <ul class="footergrid__item2--columnflex">
+              <div class="footergrid__item2 col-12 col-lg-4 text-center mt-5 mt-lg-0 mb-4 mb-lg-0">
+                <a href="index.html"><img class="footergrid__logo" src="../img/logo_im.png" alt="logo_im"/></a>
+                <ul class="footergrid__item2--liststyle">
                     <li><a class="footergrid__item2--linkstyle" href="../index.html">Inicio</a></li>
                     <li><a class="footergrid__item2--linkstyle" href="empresa.html">Empresa</a></li>
                     <li><a class="footergrid__item2--linkstyle" href="productos.html">Productos</a></li>
                     <li><a class="footergrid__item2--linkstyle" href="servicios.html">Servicios</a></li>
                     <li><a class="footergrid__item2--linkstyle" href="contacto.html">Contacto</a></li>
                 </ul>
-            </div>
+              </div>
 
-            <div class="footergrid__item3">
-                <div class="footergrid__item3--paddingflex">
-                    <p>Seguinos en redes sociales!</p>
-                    <a target="blank" href="http://facebook.com"><img src="../img/logo_facebook.png" alt="logo-facebook" height="20"/></a>
-                    <a target="blank" href="http://instagram.com"><img src="../img/logo_instagram.png" alt="logo-instagram" height="20"/></a>
-                    <a target="blank" href="http://twitter.com"><img src="../img/logo_tweeter.png" alt="logo-tweeter" height="20"/></a>
+              <div class="col-12 col-lg-4 text-center mt-5 mt-lg-0">
+                <div class="row justify-content-center justify-content-lg-end pb-5 pe-lg-5">
+                  <div class="col-2">
+                    <a target="blank" href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                  </div>
+                  <div class="col-2">
+                    <a target="blank" href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                  </div>
+                  <div class="col-2">
+                    <a target="blank" href="http://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                  </div>
                 </div>
                 
-                <div class="footergrid__item3--paddingflex">
-                    <p>Realizá tus consultas por Whatsapp</p>
-                    <a target="blank" href="http://whatsapp.com"><img src="../img/logo_whatsapp.png" alt="logo-whatsapp" height="20"/></a>
+                <div class=" row pb-3 pb-lg-5 justify-content-center justify-content-md-end align-items-center pe-md-5">
+                  <div class="pb-2 pb-lg-0 col-md-7 ps-md-4">
+                    <p>Realizá tu consulta</p>
+                  </div>
+                  <div class="col-md-2 pb-2">
+                    <a target="blank" href="http://whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                  </div> 
                 </div>
 
-                <div class="footergrid__item3--paddingflex">
-                    <p>Solicitá tu presupuesto por mail</p>
-                    <a target="blank" href="http://outlook.com"><img src="../img/logo_mail.png" alt="logo-mail" height="20"/></a>
+                <div class=" row pb-3 justify-content-center justify-content-md-end align-items-center pe-md-5">
+                  <div class="col-md-7 me-md-5 me-xl-0">
+                    <p>info@ingenieriamedica.com.ar</p>
+                  </div>
+                  <div class="col-md-2 pb-2">
+                    <a target="blank" href="http://outlook.com"><i class="fas fa-envelope"></i></a>
+                  </div> 
                 </div>
-
+              </div>
             </div>
 
-            <div class="footergrid__item4">
+            <div class="row me-0">
+              <div class="col-12 text-center">
                 <p>Todos los derechos reservados. 2021 Ingeniería Médica©</p>
+              </div>
             </div>
         </div>
     </footer>

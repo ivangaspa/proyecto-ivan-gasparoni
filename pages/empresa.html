@@ -4,14 +4,22 @@
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Ingeniería Médica</title> 
+
+    <!-- SEO -->
+    <meta name="description" content="✅ Somos una empresa lider que cuenta con un amplio e importante portfolio de productos, servicios y soluciones cuya mayor preocupacion es la satisfaccion del cliente."> 
+    <meta name="keywords" content=" electromedicina, covid19, respiradores, medicina, ingeniería, insumos, hospitalarios, bioingeniería, aparatología medica, protección, salud, coronavirus, servicio tecnico, radiografia, ecografia, anestesia, tomografo, mamografo, equipamiento medico" >
+    <meta name="author" content="ivan Gasparoni" >
+    <meta name="copyright" content="Sitio de demostración con propósitos educativos">
+
+    <title>Ingeniería Médica | 🏥 Empresa</title> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="img/im_icono.png"> <!-- Agrego icono de pestaña del navegador -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="icon" href="../img/im_icono.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
 <body>
-   
+
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -32,8 +40,8 @@
                         Productos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="productos.html#anestesia">Anestesia</a></li>
                       <li><a class="dropdown-item" href="productos.html#respiradores">Respiradores</a></li>
+                      <li><a class="dropdown-item" href="productos.html#anestesia">Anestesia</a></li>
                       <li><a class="dropdown-item" href="productos.html#incubadoras">Incubadoras</a></li>
                       <li><a class="dropdown-item" href="productos.html#monitores">Monitores</a></li>
                       <li><a class="dropdown-item" href="productos.html#ecografos">Ecografos</a></li>
@@ -52,80 +60,114 @@
           </nav>
     </header>
 
-    <main class="contentgrid2">
-        <h1 id="fuenteh1light" class="contentgrid2__title">Empresa</h1>
-        <div class="contentgrid2__subtitle">
-            <h2>Nuestra Historia</h2>
-            <p>Desde 1981 Ingeniería Médica opera en el mercado de salud encontrando soluciones y beneficios concretos para todos sus   clientes. Nuestra vocación es siempre convertir al cliente en el protagonista y eje principal de nuestra estrategia, y hoy con gran satisfacción, podemos constatar que en el tiempo transcurrido hemos generado sólidos vínculos con quienes ya consideramos nuestros socios comerciales. En esa misma línea, y percibiendo los nuevos escenarios y desafíos que hoy tienen lugar en el mercado de salud, nos planteamos mantener y acentuar el espíritu de estrecha cooperación y reciprocidad para el logro de buenos negocios y mutuos beneficios.</p>
-        </div>
-        <div class="contentgrid2__subtitle2">
-            <h3>Nuestra Misión</h3>
-            <p>
-                Proveer Tecnología y Servicios para la Salud, basados en Equipamiento y Sistemas de Información Médica, con altos estándares de calidad, seguridad y eficacia.
-            </p>
-        </div>
-        <div class="contentgrid2__subtitle3">
-            <h3>Nuestra Visión</h3>
-            <p>            
-                En un mercado de Tecnología Médica que hemos impulsado y encabezado por años, con tecnología de punta, confiabilidad y alta calificación de nuestros recursos humanos, seremos una empresa líder y singular en Soluciones Tecnológicas para la medicina del mañana.
-            </p>
-        </div>
-        <img class="scaleimg contentgrid2__image" src="../img/empresa.jpg" alt="imagen_empresa" width="500">
-        <div class="contentgrid2__image2">
-            <h3>Contamos con amplia presencia en la provincia de Buenos Aires y toda la patagonia Argentina</h3>
-            <img src="../img/mapa_territorio.png" alt="mapa_territorio" height="200">
+    <main class="empresaStyles">
+        <div class="container">
+          <h1 id="fuenteh1light" class="empresaStyles__title my-4">Empresa</h1>
+
+          <div class="empresaStyles__img mb-3">
+            <p>Ingeniería Médica, un socio comprometido con la rentabilidad de su centro de salud.</p>
+          </div>
+          <h2 class="ms-2 mb-3 my-5">Nuestra Historia</h2>
+          <div class="row my-3 justify-content-md-between">
+            <div class="empresaStyles__content1 col-xl-7">
+              <p>Desde 1981 Ingeniería Médica opera en el mercado de salud encontrando soluciones y beneficios concretos para todos sus   clientes. Nuestra vocación es siempre convertir al cliente en el protagonista y eje principal de nuestra estrategia, y hoy con gran satisfacción, podemos constatar que en el tiempo transcurrido hemos generado sólidos vínculos con quienes ya consideramos nuestros socios comerciales. En esa misma línea, y percibiendo los nuevos escenarios y desafíos que hoy tienen lugar en el mercado de salud, nos planteamos mantener y acentuar el espíritu de estrecha cooperación y reciprocidad para el logro de buenos negocios y mutuos beneficios.</p>
+            </div>
+            <img class="col-xl-4 px-0 mb-4 me-xl-3 empresaStyles__image img-fluid" src="../img/empresa.jpg" alt="imagen_empresa">
+          </div>
+          <div class="row my-4 justify-content-md-between">
+            <div class="col-xl-5 empresaStyles__content2">
+              <h3 class="ms-2 mb-3">Nuestra Misión</h3>
+              <p>
+                  Proveer Tecnología y Servicios para la Salud, basados en Equipamiento y Sistemas de Información Médica, con altos estándares de calidad, seguridad y eficacia.
+              </p>
+          </div>
+          <div class="col-xl-7 empresaStyles__content2">
+              <h3 class="ms-2 mb-3">Nuestra Visión</h3>
+              <p>            
+                  En un mercado de Tecnología Médica que hemos impulsado y encabezado por años, con tecnología de punta, confiabilidad y alta calificación de nuestros recursos humanos, seremos una empresa líder y singular en Soluciones Tecnológicas para la medicina del mañana.
+              </p>
+          </div>
+          </div>
+          <div class="empresaStyles__content3 my-2">
+              <h3>Contamos con amplia presencia en la provincia de Buenos Aires y toda la patagonia Argentina</h3>
+              <img class="scaleimg my-2" src="../img/mapa_territorio.png" alt="mapa_territorio" height="200">
+          </div>
         </div>
         
-        <img class="contentgrid2__image3" src="../img/representantes.jpg" alt="representantes" width="100%">
-    
+        <div id="carouselBrands" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/brands-0.png" class="d-block w-100" alt="Marcas-representadas">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/brands-1.png" class="d-block w-100" alt="Marcas-representadas">
+            </div>
+          </div>
+        </div>
+
     </main>
     <footer>
-        <div class="footergrid">
-    
-            <div class="footergrid__item1">
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1602.378086775274!2d-62.252665674764074!3d-38.705801173323735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1614532754200!5m2!1ses-419!2sar" width="200" height="90" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                 </div>
-                 <p>Tel: +54 11 12345678. Calle 123,</p>
-                 <p>CP8000, Bahía Blanca, Buenos Aires</p>
+      <div class="footergrid">
+          <div class="row pt-5 me-0">
+            <div class="col-12 col-lg-4 text-center">
+              <div class="footergrid__mapframe mx-auto mb-3 mb-lg-0 ps-2">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1602.378086775274!2d-62.252665674764074!3d-38.705801173323735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1614532754200!5m2!1ses-419!2sar"   style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+              <p>Tel: +54 11 12345678. Calle 123,</p>
+              <p>CP8000, Bahía Blanca, Buenos Aires</p>
             </div>
 
-            <div class="footergrid__item2">
-                <a href="../index.html"><img class="footergrid__logo" src="../img/logo_im.png" alt="logo_im" width="120"/></a>
-                <ul class="footergrid__item2--columnflex">
-                    <li><a class="footergrid__item2--linkstyle" href="../index.html">Inicio</a></li>
-                    <li><a class="footergrid__item2--linkstyle" href="empresa.html">Empresa</a></li>
-                    <li><a class="footergrid__item2--linkstyle" href="productos.html">Productos</a></li>
-                    <li><a class="footergrid__item2--linkstyle" href="servicios.html">Servicios</a></li>
-                    <li><a class="footergrid__item2--linkstyle" href="contacto.html">Contacto</a></li>
-                </ul>
+            <div class="footergrid__item2 col-12 col-lg-4 text-center mt-5 mt-lg-0 mb-4 mb-lg-0">
+              <a href="index.html"><img class="footergrid__logo" src="../img/logo_im.png" alt="logo_im"/></a>
+              <ul class="footergrid__item2--liststyle">
+                  <li><a class="footergrid__item2--linkstyle" href="../index.html">Inicio</a></li>
+                  <li><a class="footergrid__item2--linkstyle" href="empresa.html">Empresa</a></li>
+                  <li><a class="footergrid__item2--linkstyle" href="productos.html">Productos</a></li>
+                  <li><a class="footergrid__item2--linkstyle" href="servicios.html">Servicios</a></li>
+                  <li><a class="footergrid__item2--linkstyle" href="contacto.html">Contacto</a></li>
+              </ul>
             </div>
 
-            <div class="footergrid__item3">
-                <div class="footergrid__item3--paddingflex">
-                    <p>Seguinos en redes sociales!</p>
-                    <a target="blank" href="http://facebook.com"><img src="../img/logo_facebook.png" alt="logo-facebook" height="20"/></a>
-                    <a target="blank" href="http://instagram.com"><img src="../img/logo_instagram.png" alt="logo-instagram" height="20"/></a>
-                    <a target="blank" href="http://twitter.com"><img src="../img/logo_tweeter.png" alt="logo-tweeter" height="20"/></a>
+            <div class="col-12 col-lg-4 text-center mt-5 mt-lg-0">
+              <div class="row justify-content-center justify-content-lg-end pb-5 pe-lg-5">
+                <div class="col-2">
+                  <a target="blank" href="http://facebook.com"><i class="fab fa-facebook"></i></a>
                 </div>
-                
-                <div class="footergrid__item3--paddingflex">
-                    <p>Realizá tus consultas por Whatsapp</p>
-                    <a target="blank" href="http://whatsapp.com"><img src="../img/logo_whatsapp.png" alt="logo-whatsapp" height="20"/></a>
+                <div class="col-2">
+                  <a target="blank" href="http://instagram.com"><i class="fab fa-instagram"></i></a>
                 </div>
-
-                <div class="footergrid__item3--paddingflex">
-                    <p>Solicitá tu presupuesto por mail</p>
-                    <a target="blank" href="http://outlook.com"><img src="../img/logo_mail.png" alt="logo-mail" height="20"/></a>
+                <div class="col-2">
+                  <a target="blank" href="http://twitter.com"><i class="fab fa-twitter-square"></i></a>
                 </div>
+              </div>
+              
+              <div class=" row pb-3 pb-lg-5 justify-content-center justify-content-md-end align-items-center pe-md-5">
+                <div class="pb-2 pb-lg-0 col-md-7 ps-md-4">
+                  <p>Realizá tu consulta</p>
+                </div>
+                <div class="col-md-2 pb-2">
+                  <a target="blank" href="http://whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                </div> 
+              </div>
 
+              <div class=" row pb-3 justify-content-center justify-content-md-end align-items-center pe-md-5">
+                <div class="col-md-7 me-md-5 me-xl-0">
+                  <p>info@ingenieriamedica.com.ar</p>
+                </div>
+                <div class="col-md-2 pb-2">
+                  <a target="blank" href="http://outlook.com"><i class="fas fa-envelope"></i></a>
+                </div> 
+              </div>
             </div>
+          </div>
 
-            <div class="footergrid__item4">
-                <p>Todos los derechos reservados. 2021 Ingeniería Médica©</p>
+          <div class="row me-0">
+            <div class="col-12 text-center">
+              <p>Todos los derechos reservados. 2021 Ingeniería Médica©</p>
             </div>
-        </div>
-    </footer>
+          </div>
+      </div>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>

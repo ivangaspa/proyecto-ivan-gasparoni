@@ -1,0 +1,185 @@
+/*****************************************************************************Form Styles******/
+.contact {
+    background-color: $color_9;
+    text-align: center;
+
+    .contact__p {
+        line-height: 1.9rem;
+        background-color: $color_2;
+        padding: 20px 15px;
+        color: $color_1;
+        border-radius: 10px;
+        @include boxborder (0, 255, 0.3);
+        text-shadow: $text-shadow-4;
+        font-weight: 300;
+        font-size: 1.4rem;
+    }
+    
+    .contact__img {
+        border-radius: 15px;
+        @include boxborder (0, 255, 0.3);
+        background-image: url(../img/contact-img.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        height: 650px;
+        margin: 1.5rem 0;
+    }
+
+    .contact__form {
+        margin: 1.5rem 0;
+        padding: 25px;
+        border-radius: 15px;
+        @include boxborder (255, 0, 0.3);
+        font-family: $font_1;
+        font-size: 1.4rem;
+        background-color: $color_8;
+    }
+
+    .contact__form .contact__form--textareastyle {
+        background-color: $color_6;
+        width: 98%;
+        height: 340px;
+        border-radius: 5px;
+        border-top: 2px solid rgba(0, 0, 0, 0.3);
+        border-right: 2px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        border-left: 2px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .contact__form .contact__form--textinputstyle {
+        background-color: $color_6;
+        width: 98%;
+        height: 3rem;
+        border-radius: 5px;
+        margin-top: 5px;
+        border-top: 2px solid rgba(0, 0, 0, 0.3);
+        border-right: 2px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        border-left: 2px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .contact__form--buttons .contact__form--buttonstyle {
+        background-color: $color_2;
+        width:14rem;
+        height: 3rem;
+        border-radius: 10px;
+        border-top: 2px solid rgba(255, 255, 255, 0.3);
+        border-right: 2px solid rgba(0, 0, 0, 0.3);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+        border-left: 2px solid rgba(255, 255, 255, 0.3);
+        font-weight: bolder;
+        margin: 0 0.5rem;
+    }
+
+    .contact__form--buttons .contact__form--buttonstyle:hover {
+        background-color: $color_0;
+        color: $text_color_4;
+    }
+
+    .contact__form .contact__form--radiostyle ,
+    .contact__form--checkstyle {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0 1rem;
+    } 
+
+    .contact__form .contact__form--combostyle {
+        background-color: $color_6;
+        border-radius: 5px;
+        width: 98%;
+        height: 3rem;
+        margin-top: 5px;
+        border-top: 2px solid rgba(0, 0, 0, 0.3);
+        border-right: 2px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        border-left: 2px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .contact__form--name,
+    .contact__form--surname,
+    .contact__form--mail {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .contact__form--gender {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin-bottom: 1rem;
+        justify-content: center;
+        width: 98%;
+    }
+
+    .contact__form--combobox,
+    .contact__form--textbox  {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .contact__form--newsletter {
+        justify-content: center;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .contact__form--buttons {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .contact {
+        .contact__form {
+            font-size: 1rem;
+        }
+
+        .contact__p {
+            line-height: 1.6rem;
+            font-size: 1.2rem;
+        }
+
+        .contact__form .contact__form--textinputstyle,
+        .contact__form .contact__form--combostyle {
+            height: 2rem;
+        }
+
+        .contact__form .contact__form--textareastyle {
+            height: 142px;
+        }
+
+        .contact__form--gender {
+            text-align: center;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            border-top: 2px solid rgba(0, 0, 0, 0.295);
+            border-right: 2px solid rgba(255, 255, 255, 0.295);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.295);
+            border-left: 2px solid rgba(0, 0, 0, 0.295);
+            border-radius: 5px;
+            backdrop-filter: blur(3px);
+            padding: 0.3rem 0;
+        }
+
+        .contact__form .contact__form--radiostyle,
+        .contact__form--checkstyle {
+            width: 1.2rem;
+            height: 1.2rem;
+            margin: 0 0.5rem;
+        }
+
+        .contact__form--buttons .contact__form--buttonstyle {
+            height: 2rem;
+        } 
+    } 
+}

@@ -1,0 +1,402 @@
+/************ProductGrid_start*********************/
+.productgrid {
+    background-color: $color_9;
+
+    .productgrid__titulo {
+        padding: 1.5rem 2.5rem;
+        text-align: left;
+        @include borderstb (255, 0, 0.3);
+        border-radius: 0 0 15px 15px;
+        background-color: rgba(0, 0, 0, 0.15);
+        box-shadow: $box_shadow-0;
+    }
+
+    .productgrid__description {
+        display: flex;
+        margin-top: 1rem;
+        border-radius: 10px;
+        @include boxborder (255, 0, 0.3);
+        box-shadow: $box_shadow-0;
+        background-image: url(../img/productos.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+        background-position-y: 148px;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+
+        p {
+            color: $color_1;
+            text-shadow: $text-shadow-5;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            border-radius: 10px;
+            background-color: $color_5;
+            padding: 10px;
+            margin-bottom: 3rem;
+            margin: 0 3rem 0 3rem;
+            text-align: center;
+        }
+    }
+
+    
+
+    .productgrid__category--title {
+        text-align: center;
+        font-family: $font_0;
+        font-size: 1.8rem;
+        font-weight: bolder;
+        font-variant: small-caps;
+        padding: 1rem;
+    }
+
+    .productgrid__sidemenu {
+        position: relative;
+        z-index: 9;
+
+        .productgrid__sidemenu--linksflex {
+            display:flex;
+            flex-flow: column nowrap;
+            justify-content:start;
+            position: fixed;
+            top:37%;
+        }
+    
+        .productgrid__sidemenu--linksflex a {
+            position: relative;
+            left: -150px;
+            transition: 0.5s ease-out;
+            text-decoration: none;
+            text-align: center;
+            padding: 5px 10px 5px 5px;
+            font-size: 20px;
+            font-family: $font_0;
+            color: rgba(255, 255, 255, 0);
+            padding: 5px;
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.5);
+            @include borderstlr (255, 255, 0.3, 0);
+            border-radius: 0 15px 15px 0;
+            background: $wk_gradient_sec;
+            background: $gradient_sec;
+        }
+    
+        .productgrid__sidemenu--linksflex a::after {
+            position: absolute;
+            font-weight: 900;
+            font-family: "Font Awesome 5 Free";
+            width: 35px;
+            right: 1%; 
+            top: 1%;
+            background: $color_5;
+            border-radius: 15px;
+            font-size: 19px;
+            padding: 5px;
+            color: $color_1;
+            transition: 0.5s ease-in-out;
+        }
+
+        .respi__icon::after {
+            content: "\f604";
+        }
+
+        .anest__icon::after {
+            content: "\f487";
+        }
+    
+        .incub__icon::after {
+            content: "\f77c";
+        }
+
+        .monit__icon::after {
+            content: "\f812";
+        }
+
+        .rx__icon::after {
+            content: "\f5b1";
+        }
+        
+        .eco__icon::after {
+            content: "\f1eb";
+        }
+
+        .productgrid__sidemenu--linksflex a:hover {
+            left: 0;
+            color: $color_1;
+            text-shadow: $text-shadow-5;
+        }
+    
+        .productgrid__sidemenu--linksflex a:hover::after {
+            background: #ad86d100;
+            color: rgba(255, 255, 255, 0);
+            transform: translateX(-550%);
+            transition: 0.5s ease-out;
+        }
+    }
+}
+/************ProductGrid_end***********************/
+
+
+/************Product_start*************************/
+.product {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-around;
+    align-items: center;
+    position: relative;
+    box-shadow: $box-shadow-1;
+    @include borderstlr (255, 255, 0.3 ,15px);
+    height: 610px;
+    width: 500px;
+    margin-top: 1rem;
+    background-color: $color_8;
+
+        .product__imgframe {
+            position: absolute;
+            top: 10px;
+        }
+
+        .product__img {
+            width: 95%;
+            position: absolute;
+            top: 10px;
+            justify-content: center;
+            border-radius: 8px;
+            box-shadow: $box_shadow-0;
+            z-index: 2;
+        }
+
+        .product__description {
+            position: absolute;
+            top: 7px;
+            backdrop-filter: blur(2px);
+            border-radius: 10px;
+            width: 95%;
+            height:79%;
+            line-height: 2.5rem;
+            padding: 20px 5px 5px 5px;
+            z-index: 1;
+        }
+
+        .product__title {
+            position: absolute;
+            bottom: 15px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .product__new {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 3px 15px 5px 20px;
+            clip-path: polygon(100% 0%, 90% 52%, 100% 100%, 25% 100%, 0 50%, 25% 0%);
+            background-color: rgb(0, 60, 255);
+            color: $color_1;
+            text-shadow: $text-shadow-5;
+            font-size: 0.75rem;
+            font-weight: 400;
+            z-index: 6;
+        }
+
+        .product__stock {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 3px 15px 5px 35px;
+            clip-path: polygon(100% 0%, 94% 51%, 100% 100%, 25% 100%, 7% 53%, 25% 0%);
+            background-color: rgba(255, 0, 0, 0.782);
+            color: $color_1;
+            text-shadow: $text-shadow-5;
+            font-size: 0.75rem;
+            font-weight: 400;
+            z-index: 6;
+        }
+
+        .product__featured {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 3px 15px 5px 25px;
+            clip-path: polygon(100% 0%, 91% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+            background-color: rgb(255, 174, 0);
+            color: $color_1;
+            text-shadow: $text-shadow-5;
+            font-size: 0.75rem;
+            font-weight: 400;
+            z-index: 6;
+        }
+
+        button {
+            border: none;
+            outline: 0;
+            padding: 5px;
+            color: $color_1;
+            background-color: $color_0;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        .btn-primary {
+            background-color: $color_2;
+            border-color: $color_0;
+        }
+        
+        .btn-primary:hover {
+            background-color: $color_0;
+            border-color: $color_2;
+        }
+
+        .btn-primary:active {
+            outline-color: $color_0;
+            background-color:$color_2;
+            border-color:$color_0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h3 {
+            font-family: $font_1;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        p {
+            margin: 1rem 1rem;
+            text-align: justify;
+            line-height: 25px;
+            color: $color_1;
+            text-shadow: $text-shadow-6;
+            font-weight: 400;
+        }
+        
+        .product__img:hover {
+            opacity: 0.5;
+            z-index: 0;
+            transition: 0.5s;
+        }
+        
+        .product__description:hover {
+            z-index: 3;
+            background-color: rgba(88, 81, 104, 0.412);
+        }
+}
+
+.product:hover {
+    transform: scale(1.05);
+    z-index: 2;
+    transition: all 0.3s cubic-bezier(.8,1.8,.75,.75);
+}
+
+
+.precio {
+    color: rgb(34, 153, 250);
+    font-size: 1.5rem;
+}
+/************Product_end***************************/
+
+.abs__heaven {
+    position: fixed;
+    top: 65vh;
+    right: 12px;
+    background-color: #ad86d17a;
+    color: $color_1;
+    padding: 5px 10px;
+    border-radius: 50px;
+    opacity: 0.8;
+}
+
+.abs__heaven:hover {
+    background-color: #a55fe67a;
+    opacity: 1;
+}
+
+@media screen and (min-width: 992px) {
+    #productCard {
+        width: 25rem;
+        
+        .card-text {
+            font-size: 16px;
+        }
+
+        .card-title {
+            font-size: 20px;
+        }
+
+        .btn {
+            font-size: 16px;
+        }
+    }
+
+    .product {
+        height:450px;
+        width: 350px;
+
+        .product__description {
+            top: 7px;
+            height:75%;
+            line-height: 2.5rem;
+            z-index: 1;
+        }
+
+    }
+
+    .productgrid {
+        .productgrid__sidemenu {
+            .productgrid__sidemenu--linksflex {
+                top: 15%;
+            }
+            .productgrid__sidemenu--linksflex a {
+                position: relative;
+                left: -150px;
+                transition: 0.5s;
+                text-decoration: none;
+                text-align: center;
+                padding: 3px 5px 3px 5px;
+                font-size: 20px;
+                font-family: $font_0;
+                color: rgba(255, 255, 255, 0);
+                padding: 5px;
+                box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.5);
+                @include borderstlr (255, 255, 0.3, 0);
+                border-radius: 0 15px 15px 0;
+                background: $wk_gradient_sec;
+                background: $gradient_sec;
+            }
+        }
+
+        .productgrid__description {
+            @include boxborder (255, 0, 0.3);
+            margin-top: 1.5rem;
+            background-size: cover;
+            align-items: center;
+            justify-content: center;
+            background-position-y: 10px;
+            height: 435px;
+
+            p {
+                color: $color_1;
+                text-shadow: $text-shadow-5;
+                font-size: 1.3rem;
+                line-height: 2rem;
+                padding: 20px;
+                text-align: center;
+            }
+        }
+    }
+    
+    .abs__heaven {
+        top: 45vh;
+        right: 15px;
+        opacity: 0.5;
+    }
+
+}

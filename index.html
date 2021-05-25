@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Ingeniería Médica</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="✅ Somos una empresa lider que cuenta con un amplio e importante portfolio de productos, servicios y soluciones cuya mayor preocupacion es la satisfaccion del cliente."> 
+    <meta name="keywords" content=" electromedicina, covid19, respiradores, medicina, ingeniería, insumos, hospitalarios, bioingeniería, aparatología medica, protección, salud, coronavirus, servicio tecnico, radiografia, ecografia, anestesia, tomografo, mamografo, equipamiento medico" >
+    <meta name="author" content="ivan Gasparoni" >
+    <meta name="copyright" content="Sitio de demostración con propósitos educativos">
+
+    <title>Ingeniería Médica | 🏅 Innovación en Equipamiento Hospitalario 🚑</title> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="icon" href="img/im_icono.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
 <body>
-   
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
             <div class="container-fluid">
-              <a class="navbar-brand navbar__logo" href="index.html"><img src="img/logo_im.png" alt="logo_im" width="200"/></a>
+              <a class="navbar-brand navbar__logo" href="index.html"><img src="img/logo_im.png" alt="logo_im"/></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -32,8 +39,8 @@
                         Productos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="pages/productos.html#anestesia">Anestesia</a></li>
                       <li><a class="dropdown-item" href="pages/productos.html#respiradores">Respiradores</a></li>
+                      <li><a class="dropdown-item" href="pages/productos.html#anestesia">Anestesia</a></li>
                       <li><a class="dropdown-item" href="pages/productos.html#incubadoras">Incubadoras</a></li>
                       <li><a class="dropdown-item" href="pages/productos.html#monitores">Monitores</a></li>
                       <li><a class="dropdown-item" href="pages/productos.html#ecografos">Ecografos</a></li>
@@ -52,9 +59,9 @@
           </nav>
     </header>
 
-    <main class="maingridcontainer">     
-        <section class="container">
-            <div class="row my-2">
+    <main class="mainContainer">     
+        <section class="container-fluid container-lg">
+            <div class="row mt-4">
                 <div id="maincarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#maincarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -63,28 +70,29 @@
                     </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="img/banner1.png" class="d-block" alt="imagenPortada1">
-                        <div class="carousel-caption d-none d-md-block">
+                        <img src="img/banner1.png" class="d-block img-fluid" alt="imagenPortada1">
+                        <div class="carousel-caption">
                             <h1 id="fuenteh1">Ingeniería Médica</h1>
-                            <p>Contamos con 40 años de experiencia en la provisión de equipamiento e insumos médicos de alta performance para el diagnóstico por imágenes y estamos en este mercado con un claro propósito:</p>
-                            <p>Brindar precisión en el diagnóstico y contribuir fuertemente a la productividad de centros médicos e instituciones hospitalarias.</p>
+                            <p>Contamos con 40 años de experiencia en la provisión de equipamiento médico de alta performance para el diagnóstico por imágenes.</p>
+                            <p class="d-none d-md-none d-lg-block" >Brindamos precisión en el diagnóstico y contribuimos fuertemente a la productividad de centros médicos e instituciones hospitalarias.</p>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="img/banner2.png" class="d-block" alt="imagenPortada2">
-                        <div class="carousel-caption d-none d-md-block">
+                        <img src="img/banner2.png" class="d-block img-fluid" alt="imagenPortada2">
+                        <div class="carousel-caption">
                           <h5>Asistencia y soporte!</h5>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae omnis magnam voluptates, possimus veritatis dolore.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae omnis magnam voluptates, possimus veritatis dolore.</p>
+                          <p class="d-none d-md-none d-lg-block">Servicios de mesa de ayuda con nuestra propia línea gratuita 24hs, asesoría técnica presencial con cobertura en todo el país, servicios de mantenimiento, asistencia técnica remota.</p>
+                          <p class="d-block d-lg-none">Servicios de mantenimiento y asistencia técnica.</p>
                           <a href="pages/contacto.html" class="btn btn-primary">Realizar consulta</a>
+                          <span class="ms-1 ms-lg-3 ms-xl-4">+54 11 12345678</span>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="img/banner3.png" class="d-block" alt="imagenPortada3">
-                        <div class="carousel-caption d-none d-md-block">
+                        <img src="img/banner3.png" class="d-block img-fluid" alt="imagenPortada3">
+                        <div class="carousel-caption">
                           <h5>Protección Covid 19</h5>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae, dolore laudantium corrupti reprehenderit officiis alias unde dignissimos natus explicabo quam. Consequuntur saepe ducimus alias?</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cum consectetur labore distinctio excepturi voluptatum voluptates minima illum eius!.</p>
+                          <p>Las mascarillas deben utilizarse como parte de una estrategia integral de medidas para suprimir la transmisión y salvar vidas.</p>
+                          <p class="d-none d-md-none d-lg-block">Si desea más detalles sobre qué tipo de mascarilla utilizar y cuándo, consulte nuestra sección de Productos.</p>
                         </div>
                       </div>
                     </div>
@@ -99,35 +107,37 @@
                   </div>
             </div>
         </section>
-        <section class="container-fluid maingridcontainer__griditem2">
-            <div> 
-                <h2 class="maingridcontainer__tituloh2">Un gran equipo al servicio de la salud</h2>
-                <h3 class="maingridcontainer__tituloh3">Contamos con amplio stock de elementos de seguridad para combatir el covid 19!</h3>
+        <section class="container">
+            <div class="my-4 mainContainer__item1"> 
+                <h2 class="mainContainer__tituloh2">Un gran equipo al servicio de la salud</h2>
+                <h3 class="mainContainer__tituloh3">Contamos con amplio stock de elementos de seguridad para combatir el covid 19!</h3>
             </div>
         </section>    
-        <section class="container">
-            <div class="row">
-              <div class="col-sm">
-                <div id= "productCard" class="card" style="width: 25rem;">
-                  <img src="img/fplus.png" class="card-img-top" alt="producto-portada">
-                  <div class="card-body">
-                    <h5 class="card-title">Mesa de anestesia Drager Fabius plus</h5>
-                    <p class="precio text-center">$1.565.800,00</p>
-                    <p class="card-text">Ventilador E-vent: Controlado electrónicamente, con accionamiento eléctrico. Modos de funcionamiento: Estándar: manual / espontáneo, control de volumen (IPPV).</p>
-                    <a href="pages/productos.html" class="btn btn-primary">ver más productos</a>
+        <section class="container-fluid container-lg">
+            <div class="row justify-content-xl-between">
+              <div class="col-12 col-xl-6 mx-auto mx-xl-0">
+
+                <div class="product mx-auto my-4">
+                  <img class="product__img" src="img/plusxl.png" alt="Fabiusplus-XL">
+                  <div class="product__title"> 
+                      <h3>Fabius® plus XL</h3>
+                      <a href="../pages/productos.html" class="btn btn-primary">Consultar más productos</a>
+                  </div>
+                  <div class="product__description">
+                      <p>Combina la genuina ingeniería alemana de gran fiabilidad con una terapia de ventilación de alto rendimiento. Gracias a su concepto de diseño escalable, le permite elegir la estación de calidad que desea hoy sin perder de vista sus objetivos y necesidades futuras.</p>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 maingridcontainer__griditem4">
+              <div class="col-sm-12 col-xl-5 mt-5 mx-auto mainContainer__item2">
                 <p>En Ingeniería Médica nos comprometemos dia a dia a brindar la mejor calidad de servicio y atención. Cada cliente es único, por eso nuestro equipo de ventas y asesores, ofrece atención personalizada, priorizando la inmediatez de respuesta a cada una de sus necesidades.</p>
               </div>
             </div>
-            <div class="row py-5 ">
-              <div class="col-sm-6 maingridcontainer__griditem5">
+            <div class="row my-5 justify-content-xl-between">
+              <div class="col-sm-12 col-xl-5 mx-auto mainContainer__item2">
                   <p>Somos Business Partner y Distribuidores Oficiales de Drager medical, Siemens Healthineers, Barco, Carestream, Visual Medica y Hotborn, marcas líderes en equipamiento médico. Esto nos permite no solo garantizar la calidad de nuestros productos, sino también de todo el proceso inherente a la adquisición de los mismos.</p>
               </div>
-              <div class="col-sm-6 maingridcontainer__griditem6">
-                <iframe class="maingridcontainer__griditem6__videobox" src="https://www.youtube.com/embed/Xiy-FX2e8NY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="col-sm-12 col-xl-5 mt-xl-0 mt-5 mainContainer__item3">
+                <iframe class="mainContainer__item3__videobox" width="560" height="315" src="https://www.youtube.com/embed/baFnJbnlxls?start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
         </section>  
@@ -135,48 +145,63 @@
 
     <footer>
         <div class="footergrid">
-    
-            <div class="footergrid__item1">
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1602.378086775274!2d-62.252665674764074!3d-38.705801173323735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1614532754200!5m2!1ses-419!2sar" width="200" height="90" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                 </div>
-                 <p>Tel: +54 11 12345678. Calle 123,</p>
-                 <p>CP8000, Bahía Blanca, Buenos Aires</p>
-            </div>
+            <div class="row pt-5 me-0">
+              <div class="col-12 col-lg-4 text-center">
+                <div class="footergrid__mapframe mx-auto mb-3 mb-lg-0 ps-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1602.378086775274!2d-62.252665674764074!3d-38.705801173323735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1614532754200!5m2!1ses-419!2sar"   style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+                <p>Tel: +54 11 12345678. Calle 123,</p>
+                <p>CP8000, Bahía Blanca, Buenos Aires</p>
+              </div>
 
-            <div class="footergrid__item2">
-                <a href="index.html"><img class="footergrid__logo" src="img/logo_im.png" alt="logo_im" width="120"/></a>
-                <ul class="footergrid__item2--columnflex">
+              <div class="footergrid__item2 col-12 col-lg-4 text-center mt-5 mt-lg-0 mb-4 mb-lg-0">
+                <a href="index.html"><img class="footergrid__logo" src="img/logo_im.png" alt="logo_im"/></a>
+                <ul class="footergrid__item2--liststyle">
                     <li><a class="footergrid__item2--linkstyle" href="index.html">Inicio</a></li>
                     <li><a class="footergrid__item2--linkstyle" href="pages/empresa.html">Empresa</a></li>
                     <li><a class="footergrid__item2--linkstyle" href="pages/productos.html">Productos</a></li>
                     <li><a class="footergrid__item2--linkstyle" href="pages/servicios.html">Servicios</a></li>
                     <li><a class="footergrid__item2--linkstyle" href="pages/contacto.html">Contacto</a></li>
                 </ul>
-            </div>
+              </div>
 
-            <div class="footergrid__item3">
-                <div class="footergrid__item3--paddingflex">
-                    <p>Seguinos en redes sociales!</p>
-                    <a target="blank" href="http://facebook.com"><img src="img/logo_facebook.png" alt="logo-facebook" height="20"/></a>
-                    <a target="blank" href="http://instagram.com"><img src="img/logo_instagram.png" alt="logo-instagram" height="20"/></a>
-                    <a target="blank" href="http://twitter.com"><img src="img/logo_tweeter.png" alt="logo-tweeter" height="20"/></a>
+              <div class="col-12 col-lg-4 text-center mt-5 mt-lg-0">
+                <div class="row justify-content-center justify-content-lg-end pb-5 pe-lg-5">
+                  <div class="col-2">
+                    <a target="blank" href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                  </div>
+                  <div class="col-2">
+                    <a target="blank" href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                  </div>
+                  <div class="col-2">
+                    <a target="blank" href="http://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                  </div>
                 </div>
                 
-                <div class="footergrid__item3--paddingflex">
-                    <p>Realizá tus consultas por Whatsapp</p>
-                    <a target="blank" href="http://whatsapp.com"><img src="img/logo_whatsapp.png" alt="logo-whatsapp" height="20"/></a>
+                <div class=" row pb-3 pb-lg-5 justify-content-center justify-content-md-end align-items-center pe-md-5">
+                  <div class="pb-2 pb-lg-0 col-md-7 ps-md-4">
+                    <p>Realizá tu consulta</p>
+                  </div>
+                  <div class="col-md-2 pb-2">
+                    <a target="blank" href="http://whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                  </div> 
                 </div>
 
-                <div class="footergrid__item3--paddingflex">
-                    <p>Solicitá tu presupuesto por mail</p>
-                    <a target="blank" href="http://outlook.com"><img src="img/logo_mail.png" alt="logo-mail" height="20"/></a>
+                <div class=" row pb-3 justify-content-center justify-content-md-end align-items-center pe-md-5">
+                  <div class="col-md-7 me-md-5 me-xl-0">
+                    <p>info@ingenieriamedica.com.ar</p>
+                  </div>
+                  <div class="col-md-2 pb-2">
+                    <a target="blank" href="http://outlook.com"><i class="fas fa-envelope"></i></a>
+                  </div> 
                 </div>
-
+              </div>
             </div>
 
-            <div class="footergrid__item4">
+            <div class="row me-0">
+              <div class="col-12 text-center">
                 <p>Todos los derechos reservados. 2021 Ingeniería Médica©</p>
+              </div>
             </div>
         </div>
     </footer>

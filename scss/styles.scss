@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+@import "vars.scss";
+@import "nav&footer.scss";
+@import "forms.scss";
+@import "productcard.scss";
+@import "index.scss";
+
+body {
+  display: grid;
+  grid-template-columns: auto;
+  width:100%;
+  font-family: $font_2;
+  font-weight: normal;
+  background-image: $bg_img;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+  p {
+    color:lightslategray;
+    font-size: 25px;
+  }
+  
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    color: $text_color_3;
+    padding-bottom: 5px;
+    text-shadow: $text-shadow-1;
+    font-weight: normal;
+    line-height: 25px;
+    font-size: 1.8rem;
+  }
+}
+
+header {
+  background-color:$color_3;
+  height:146px;
+}
+
+#fuenteh1 { 
+  font-family: $font_0; 
+  color:$color_1;
+  text-shadow: $text-shadow-2;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#fuenteh1light { 
+  @extend #fuenteh1;
+  color:$text_color_2;
+  text-shadow:  $text-shadow-1;
+}
+
+/**************MainContainer_Start********************/
+.mainContainer {
+  background-color: $color_9;
+
+  .mainContainer__item1 {
+    background: $wk_gradient_thi;
+    background: $gradient_thi;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 20px;
+    @include boxborder (255, 0, 0.3);
+    box-shadow: $box_shadow-0;
+  }
+    
+  .mainContainer__tituloh2 {
+    color:$text_color_1;
+    text-shadow: $text-shadow-2;
+    padding: 10px;
+    font-size: 2rem;
+  }
+    
+  .mainContainer__tituloh3 {
+    color:$text_color_3;
+    text-shadow: $text-shadow-1;
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .mainContainer__item2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align:justify;
+    line-height: 2rem;
+    
+    p {
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 35px;
+      @include boxborder (255, 0, 0.3);
+    }
+  }
+  
+  .mainContainer__item3 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+    
+  .mainContainer__item3__videobox {
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 20px;
+    -moz-box-shadow: 4px 4px 14px #000;
+    -webkit-box-shadow: 4px 4px 14px #000;
+    box-shadow: 4px 4px 14px #000;
+  }
+}
+/**************Maincontainer_End**********************/
+/**************Service_Section************************/
+.servicestyle {
+  background-color: $color_9;
+  font-family: $font_1;
+
+  h2 {
+    color: $color_0;
+    margin-bottom: 1.3rem;
+  }
+
+  .servicestyle__title {
+    text-align: center;
+  }
+
+  .servicestyle__image {
+    border-radius: 10px;
+    box-shadow: $box_shadow-0;
+    width: 100%;
+  }
+  
+  .servicestyle__subtitle {
+    text-align: center;
+    margin: 1rem 0;
+    line-height: 2rem;
+
+    p {
+      font-size: 1.2rem;
+      text-shadow: $text-shadow-1;
+      backdrop-filter: blur(5px);
+      border-radius: 20px;
+      padding: 10px;
+      @include boxborder (255, 0, 0.2);
+      text-align: justify;
+      color:$text_color_6 ;
+    }
+  }
+}
+/**************Accordion****************************/
+.accordion-flush .accordion-item {
+  border-radius: 15px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(169, 169, 169, 0);
+  @include boxborder (255, 0, 0.2);
+}
+.accordion-flush .accordion-item .accordion-button {
+  border-radius: 15px;
+  @include boxborder (255, 0, 0.2);
+  background-color: $color_5;
+  text-shadow: $text-shadow-2;
+  font-weight: 900;
+  color: $text_color_3;
+}
+
+.accordion-flush .accordion-item .accordion-button:hover {
+  background-color: $color_2;
+  text-shadow: $text-shadow-1;
+  font-weight: 900;
+  color: $color_1;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.accordion-flush .accordion-item:last-child {
+  border-bottom: inset;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  color: $text_color_4;
+}
+.accordion-button::after {
+  background-image: none;
+  content: "\f0ab";
+  font-weight: 900;
+  font-size: 1.3rem;
+  font-family: "Font Awesome 5 Free";
+  text-shadow: none;
+  transform-origin: center center;
+}
+/**************Service_End****************************/
+
+.empresaStyles {
+  background-color: $color_9;
+  font-family: $font_1;
+
+  h2 {
+    color: $color_0;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .empresaStyles__title {
+    text-align: center;
+  }
+  
+  .empresaStyles__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+    @include boxborder (255, 0, 0.3);
+    box-shadow: $box_shadow-0;
+    background-image: url(../img/empresa1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position-y: 148px;
+    height: 120px;
+    
+    p {
+      color: $color_1;
+      text-shadow: $text-shadow-5;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      border-radius: 10px;
+      background-color: $color_5;
+      padding: 10px;
+      margin-bottom: 3rem;
+      margin: 0 3rem 0 3rem;
+      text-align: center;
+  }
+  }
+
+  .empresaStyles__content1 {
+    text-align: center;
+    line-height: 2rem;
+    
+    p {
+      font-size: 1.2rem;
+      text-shadow: $text-shadow-1;
+      backdrop-filter: blur(5px);
+      border-radius: 20px;
+      padding: 15px;
+      @include boxborder (255, 0, 0.3);
+      text-align: justify;
+      color:$text_color_6 ;
+    }
+  }
+  
+  .empresaStyles__content2 {
+    text-align: left;
+    line-height: 2rem;
+    p {
+      font-size: 1.2rem;
+      text-shadow: $text-shadow-1;
+      backdrop-filter: blur(5px);
+      border-radius: 20px;
+      padding: 15px;
+      @include boxborder (255, 0, 0.3);
+      text-align: justify;
+      color:$text_color_6 ;
+    }
+  }
+  
+  .empresaStyles__image {
+    border-radius: 10px;
+    @include boxborder (255, 0, 0.3);
+    box-shadow: $box_shadow-0;
+  }
+  
+  .empresaStyles__content3 {
+    text-align: center;
+
+    h3 {
+      text-shadow: $text-shadow-2;
+      border-radius: 10px;
+      background-color: $color_5;
+      padding: 20px 10px;
+      line-height: 2.2rem;
+      margin-bottom: 3rem;
+      margin: 0 3rem 0 3rem;
+      text-align: center;
+    }
+  }
+
+}
+
+.scaleimg:hover {
+  @extend .product:hover;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color_2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px #b3b3b3;
+}
+/************************Media_Queries*******************/
+@media screen and (min-width: 992px) {
+
+  body {
+    
+    p {
+      color:lightslategray;
+      font-size: 14px;
+    }
+    
+    h1 {
+      font-size: 1.7rem;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+
+  #fuenteh1 {
+    font-size: 2rem;
+  }
+
+  header {
+    height:86px;
+  }
+
+  .mainContainer {
+    
+    .mainContainer__tituloh2 {
+      font-size: 30px;
+    }
+
+    .mainContainer__item2 {
+      
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+/**************Service_Start****************************/
+  .servicestyle {
+    
+    .servicestyle__subtitle {
+      margin: 1.2rem 0;
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }/**************Service_End****************************/
+  /**************Empresa_Start***************************/
+  .empresaStyles {
+    background-color: rgba(182, 177, 177, 0.466);
+    font-family: $font_1;
+
+    .empresaStyles__img {
+      background-position-y: 85px;
+      height: 330px;
+
+      p{
+        font-size: 1.3rem;
+      }
+    }
+
+    h2 {
+      text-align: left;
+      font-size: 2rem;
+    }
+
+    .empresaStyles__content1,
+    .empresaStyles__content2 {
+      
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }/**************Empresa_End****************************/
+}/*********************Media_Queries_END*****************/
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(.3);
+  } 
+
+  50% {
+    transform: scale(1.05);
+  } 
+
+  70% {
+    transform: scale(.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

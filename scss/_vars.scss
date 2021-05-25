@@ -1,0 +1,68 @@
+/* Variables Generales */
+
+/**********Colors**********************/
+$color_0: rgb(94, 20, 233);
+$color_1: rgb(255, 255, 255);
+$color_2: rgba(100, 71, 231, 0.473);
+$color_3: rgba(255, 255, 255, 0.733);
+$color_4: rgba(223, 215, 215, 0.774);
+$color_5: #ad86d17a;
+$color_6: rgba(227, 223, 250, 0.692);
+$color_7: rgba(89, 50, 119, 0.315);
+$color_8: #8686fc44;
+$color_9: rgba(182, 177, 177, 0.466);
+
+/***********Text Colors****************/
+$text_color_0: lightslategray;
+$text_color_1: rgb(15, 5, 158);
+$text_color_2: rgb(107, 44, 255);
+$text_color_3: darkslateblue;
+$text_color_4: rgb(236, 207, 243);
+$text_color_5: rgba(0, 0, 0, 0.15);
+$text_color_6: #434547;
+$text_color_7: #7e8082;
+
+/*************fonts********************/
+$font_0: 'Syncopate', sans-serif;
+$font_1: 'Poppins', sans-serif;
+$font_2: 'Open Sans', Arial, Helvetica, sans-serif;
+
+/*************Gradients****************/
+$wk_gradient_pri: -webkit-linear-gradient(to right, #a9a4d6ef, #DAE2F8); 
+$gradient_pri: linear-gradient(to right,  #a6bef1f1,#e6daf8f6);
+$wk_gradient_sec: -webkit-linear-gradient(to right, #d6a4a4, #DAE2F8); 
+$gradient_sec: linear-gradient(to right, #a9a4d6, #dae2f8);
+$wk_gradient_thi: -webkit-linear-gradient(to right, #33339960, #cc00ff);
+$gradient_thi: linear-gradient(to right, #3333994d, #9900ff62);
+
+/**************Backgrounds*************/
+$bg_img: url(../img/background.jpg);
+
+/**************Shadows*****************/
+$box_shadow-0: 10px 10px 20px rgba(0, 0, 0, 0.3);
+$box-shadow-1: 20px 20px 50px rgba(0, 0, 0, 0.219);
+$text-shadow-0: 1px 1px 2px rgb(232, 229, 233);
+$text-shadow-1: 1px 1px 2px rgb(169, 157, 240);
+$text-shadow-2: 1px 1px 2px rgb(195, 103, 231);
+$text-shadow-3: 1px 1px 4px rgb(255, 255, 255);
+$text-shadow-4: 2px 2px 4px rgb(71, 71, 71);
+$text-shadow-5: 2px 2px 4px rgb(0, 0, 0);
+$text-shadow-6: 1px 1px 3px rgb(0, 0, 0);
+
+@mixin borderstlr ($num0, $num1, $opacity, $radius) {
+    border-top: 1px solid rgba($num0, $num0, $num0, $opacity);
+    border-left: 1px solid rgba($num1, $num1, $num1, $opacity);
+    border-radius: $radius;
+}
+    
+@mixin boxborder ($num1, $num2, $opacity) {
+    border-top: 1px solid rgba($num1, $num1, $num1, $opacity);
+    border-right: 1px solid rgba($num2, $num2, $num2, $opacity);
+    border-bottom: 1px solid rgba($num2, $num2, $num2, $opacity);
+    border-left: 1px solid rgba($num1, $num1, $num1, $opacity);
+}
+
+@mixin borderstb ($num0, $num1, $opacity) {
+    border-top: 1px solid rgba($num0, $num0, $num0, $opacity);
+    border-bottom: 1px solid rgba($num1, $num1, $num1, $opacity);
+}

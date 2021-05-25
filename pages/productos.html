@@ -3,391 +3,642 @@
 <head>
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Ingeniería Médica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="✅ Somos una empresa lider que cuenta con un amplio e importante portfolio de productos, servicios y soluciones cuya mayor preocupacion es la satisfaccion del cliente."> 
+    <meta name="keywords" content=" electromedicina, covid19, respiradores, medicina, ingeniería, insumos, hospitalarios, bioingeniería, aparatología medica, protección, salud, coronavirus, servicio tecnico, radiografia, ecografia, anestesia, tomografo, mamografo, equipamiento medico" >
+    <meta name="author" content="ivan Gasparoni" >
+    <meta name="copyright" content="Sitio de demostración con propósitos educativos">
+    
+    <title>Ingeniería Médica | ⚙️ Productos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">  
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="img/im_icono.png"> <!-- Agrego icono de pestaña del navegador -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="icon" href="../img/im_icono.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
 <body>
-   
+
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand navbar__logo" href="../index.html"><img src="../img/logo_im.png" alt="logo_im" width="200"/></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand navbar__logo" href="../index.html"><img src="../img/logo_im.png" alt="logo_im" width="200"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="navbar__link" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="navbar__link" href="empresa.html">Empresa</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="navbar__link dropdown-toggle" href="productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="productos.html#anestesia">Anestesia</a></li>
-                      <li><a class="dropdown-item" href="productos.html#respiradores">Respiradores</a></li>
-                      <li><a class="dropdown-item" href="productos.html#incubadoras">Incubadoras</a></li>
-                      <li><a class="dropdown-item" href="productos.html#monitores">Monitores</a></li>
-                      <li><a class="dropdown-item" href="productos.html#ecografos">Ecografos</a></li>
-                      <li><a class="dropdown-item" href="productos.html#varios">Varios</a></li>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="navbar__link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar__link" href="empresa.html">Empresa</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar__link dropdown-toggle" href="productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                            <ul ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="productos.html#respiradores">Respiradores</a></li>
+                                <li><a class="dropdown-item" href="productos.html#anestesia">Anestesia</a></li>
+                                <li><a class="dropdown-item" href="productos.html#incubadoras">Incubadoras</a></li>
+                                <li><a class="dropdown-item" href="productos.html#monitores">Monitores</a></li>
+                                <li><a class="dropdown-item" href="productos.html#ecografos">Ecografos</a></li>
+                                <li><a class="dropdown-item" href="productos.html#varios">Varios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar__link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar__link" href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="navbar__link" href="servicios.html">Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="navbar__link" href="contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
-        <section class="productgrid">
-            <h1 id="fuenteh1light" class="productgrid__titulo">Productos</h1>
-            <div class="productgrid__description">
-                <p>Ofrecemos accesorios inteligentes y soluciones, que no sólo protegen sus dispositivos, también optimizan el flujo de trabajo clínico. Por tanto, estamos seguros de la proteccion de su dispositivo y de su inversión en una de las tecnologías más innovadoras en el mercado. Elija accesorios y consumibles originales y haga que las partes más débiles se conviertan en un eslabón fuerte, capaz de proporcionar una atención óptima al paciente en su entorno clínico.</p>
-            </div>
+        <section class="productgrid pb-5">
+            <a class="abs__heaven" href="#"><i class="fas fa-angle-double-up"></i></a>
             <div class="productgrid__sidemenu">
                 <div class="productgrid__sidemenu--linksflex">
-                    <a href="#respiradores">Respiradores</a>
-                    <a href="#anestesia">Anestesia</a>
-                    <a href="#incubadoras">Incubadoras</a>
-                    <a href="#monitores">Monitores</a>
-                    <a href="#ecografos">Ecógrafos</a>
-                    <a href="#varios">Varios</a>
+                    <a class="respi__icon" href="#respiradores">Respiradores</a>
+                    <a class="anest__icon" href="#anestesia">Anestesia</a>
+                    <a class="incub__icon" href="#incubadoras">Incubadoras</a>
+                    <a class="monit__icon" href="#monitores">Monitores</a>
+                    <a class="eco__icon" href="#ecografos">Ecógrafos</a>
+                    <a class="rx__icon" href="#varios">Varios</a>
                 </div>
             </div>
-            <div class="productgrid__category1"  id="respiradores">
-                <h3 class="productgrid__category--title">Respiradores</h3>
-            </div>
-            <div class="productgrid__category2"  id="anestesia">
-                <h3 class="productgrid__category--title">Equipos de Anestesia</h3>
-            </div>
-            <div class="productgrid__category3"  id="incubadoras">
-                <h3 class="productgrid__category--title">Incubadoras</h3>
-            </div>
-            <div class="productgrid__category4"  id="monitores">
-                <h3 class="productgrid__category--title">Monitores</h3>
-            </div>
-            <div class="productgrid__category5"  id="ecografos">
-                <h3 class="productgrid__category--title">Ecografía</h3>
-            </div>
-            <div class="productgrid__category6"  id="varios">
-                <h3 class="productgrid__category--title">Varios</h3>
-            </div>
-            <div class="productgrid__sidemargin"></div>
-            <div class="product">
-                <img class="product__img" src="../img/v300.png" alt="Evita-V300">
-                <div class="product__text">
-                    <h3>Evita® V300</h3>
-                    <p class="precio">$1.450.000</p>
-                    <p>Evita® V300 es un ventilador mecánico escalable y versátil que ofrece ventilación de alta calidad. Para cumplir y controlar los cambios en las condiciones y las dificultades que se presentan cada día en el hospital, necesita un equipo flexible y polivalente.</p>
+            <div class="container">
+                <h1 id="fuenteh1light" class="productgrid__titulo mx-auto text-center pt-4">Productos</h1>
+                <div class="productgrid__description px-lg-4">
+                    <p>Ofrecemos productos inteligentes y soluciones, que no sólo protegen sus dispositivos, también optimizan el flujo de trabajo clínico.</p>
                 </div>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/s300.png" alt="Sabina-300">
-                <div class="product__text">
-                    <h3>Savina® 300 Classic</h3>
-                    <p class="precio">$1.350.500</p>
-                    <p>Combina la independencia y potencia del sistema de ventilación accionado por turbina, con una amplia gama de modos de ventilación. Una gran pantalla táctil en color y un sistema operativo intuitivo, que se concentra en las funciones esenciales, simplifican el uso y la configuración.</p>
+                <div class="mt-3"  id="respiradores">
+                    <h3 class="productgrid__category--title">Respiradores</h3>
                 </div>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/v500.png" alt="Infinity-V500">
-                <div class="product__text">
-                    <h3>Evita Infinity® V500</h3>
-                    <p class="precio">$950.500</p>
-                    <p>Combine una ventilación de alto rendimiento que incorpora absolutamente todas las estrategias con la integración de Infinity® Acute Care System™ para satisfacer las elevadas exigencias de los entornos de asistencia sanitaria de hoy en día.</p>
+                <div class="row">
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <span class="product__featured">Destacado</span>
+                        <img class="product__img" src="../img/v300.png" alt="Evita-V300">
+                        <div class="product__title">
+                            <h3>Evita® V300</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Evita® V300 es un ventilador mecánico escalable y versátil que ofrece ventilación de alta calidad. Para cumplir y controlar los cambios en las condiciones y las dificultades que se presentan cada día en el hospital, necesita un equipo flexible y polivalente.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/s300.png" alt="Sabina-300">
+                        <div class="product__title">
+                            <h3>Savina® 300 Classic</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Combina la independencia y potencia del sistema de ventilación accionado por turbina, con una amplia gama de modos de ventilación. Una gran pantalla táctil en color y un sistema operativo intuitivo, que se concentra en las funciones esenciales, simplifican el uso y la configuración.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/v500.png" alt="Infinity-V500">
+                        <div class="product__title">
+                            <h3>Evita Infinity® V500</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Combine una ventilación de alto rendimiento que incorpora absolutamente todas las estrategias con la integración de Infinity® Acute Care System™ para satisfacer las elevadas exigencias de los entornos de asistencia sanitaria de hoy en día.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <span class="product__new">Nuevo</span>
+                        <img class="product__img" src="../img/pv500.png" alt="PulmoVista-500">
+                        <div class="product__title">
+                            <h3>PulmoVista® 500</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Haciendo visible la ventilación. Ponga el rendimiento de la tomografía de impedancia eléctrica (TIE) a su servicio y al de sus pacientes. Con PulmoVista 500 podrá visualizar la distribución regional de aire en los pulmones de forma no invasiva, en tiempo real y directamente desde la cabecera.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <span class="product__stock">Ultimas Unidades</span>
+                        <img class="product__img" src="../img/b8000p.png" alt="Babylog-8000plus">
+                        <div class="product__title">
+                            <h3>Babylog® 8000 plus</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Más de 30 años de experiencia en la ventilación neonatal y un siglo de conocimientos en tecnologías de ventilación se han unido en el Babylog 8000 plus de Dräger. El resultado es un ventilador neonatal que satisface los máximos estándares que usted exige para el cuidado de sus pequeños pacientes.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/vn500.png" alt="Babylog-VN500">
+                        <div class="product__title">
+                            <h3>Babylog® VN500</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Para las futuras generaciones. El Babylog® VN500 combina nuestros años de experiencia con lo último en tecnología. El resultado es una solución de ventilación completa e integrada para los pacientes más pequeños. Supera nuevas barreras hoy para estar preparado para el mañana.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/o3000p.png" alt="Oxylog-3000plus">
+                        <div class="product__title">
+                            <h3>Oxylog® 3000 plus</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Responda al reto de la ventilación de transporte ofreciendo una ventilación de alto rendimiento con funciones como AutoFlow®, capnografía integrada y ventilación no invasiva, la unidad compacta y robusta le ayuda a tratar y transportar a sus pacientes de una manera segura y le proporciona el feedback que necesita sobre la efectividad de la terapia respiratoria.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/o2000p.png" alt="Oxylog-2000plus">
+                        <div class="product__title">
+                            <h3>Oxylog® 2000 plus</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Aumente su rendimiento e incremente las posibilidades de monitorización y ventilación con una amplia gama de básicos modernos de ventilación, un diseño robusto y compacto y un funcionamiento simple e intuitivo para todas las necesidades de transporte y ventilación de emergencia.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/carina.png" alt="Carina">
+                        <div class="product__title">
+                            <h3>Carina®</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Diseñado para la ventilación no invasiva: con su excepcional tecnología SyncPlus® y su función de ventilación no invasiva (NIV) extendida, el práctico Dräger Carina® ofrece una ventilación sencilla y fiable y, gracias a su diseño compacto, puede usarse durante el traslado de pacientes.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <span class="product__new">Nuevo</span>
+                        <img class="product__img" src="../img/ove300.png" alt="Oxylog-VE300">
+                        <div class="product__title">
+                            <h3>Oxylog® VE300</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>El sencillo y práctico ventilador Oxylog® VE300 de Dräger está diseñado para hacer frente a los retos en los servicios de atención de emergencia preclínica. Gracias a su tecnología de ventilación fiable, su robustez y su funcionamiento intuitivo, proporciona una asistencia fiable y segura durante la atención de emergencias.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/pv500.png" alt="PulmoVista-500">
-                <div class="product__text">
-                    <h3>PulmoVista® 500</h3>
-                    <p class="precio">$1.250.000</p>
-                    <p>Haciendo visible la ventilación. Ponga el rendimiento de la tomografía de impedancia eléctrica (TIE) a su servicio y al de sus pacientes. Con PulmoVista 500 podrá visualizar la distribución regional de aire en los pulmones de forma no invasiva, en tiempo real y directamente desde la cabecera.</p>
+                <div class="mt-3"  id="anestesia">
+                    <h3 class="productgrid__category--title">Equipos de Anestesia</h3>
                 </div>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/b8000p.png" alt="Babylog-8000plus">
-                <div class="product__text">
-                    <h3>Babylog® 8000 plus</h3>
-                    <p class="precio">$820.000</p>
-                    <p>Más de 30 años de experiencia en la ventilación neonatal y un siglo de conocimientos en tecnologías de ventilación se han unido en el Babylog 8000 plus de Dräger. El resultado es un ventilador neonatal que satisface los máximos estándares que usted exige para el cuidado de sus pequeños pacientes.</p>
+                <div class="row">
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <span class="product__new">Nuevo</span>
+                        <img class="product__img" src="../img/zeus.png" alt="Zeus-Infinity-Empowered">
+                        <div class="product__title"> 
+                            <h3>Zeus® Infinity Empowered</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Funciones de ventilación protectora pulmonar, tecnología que permite ahorrar costes en el suministro de gases, herramientas para la toma de decisiones y monitorización exhaustiva. Zeus IE integra todo lo anterior en una estación de anestesia avanzada. Gracias a ello, puede mejorar los resultados clínicos y la eficiencia del flujo de trabajo, y ahorrar costes a lo largo del proceso de anestesia.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/a500.png" alt="Perseus-A500">
+                        <div class="product__title"> 
+                            <h3>Perseus® A500</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Respirador de quirófano avanzado Combine la tecnología de ventilación más avanzada con las últimas mejoras en ergonomía e integración de sistemas con una plataforma de anestesia vanguardista, diseñada con expertos de todo el mundo para agilizar el flujo de trabajo de anestesia.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <span class="product__featured">Destacado</span>
+                        <img class="product__img" src="../img/primus.png" alt="Primus">
+                        <div class="product__title"> 
+                            <h3>Primus®</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>La estación Dräger Primus® ha sido diseñada para ser nada más y nada menos que su ayudante personal de anestesia. Es una combinación de diseño puesto a prueba a lo largo del tiempo con una tecnología de vanguardia, creada para satisfacer la demanda de una solución de anestesia completa e innovadora en el cada vez más complejo entorno médico actual.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <span class="product__new">Nuevo</span>
+                        <img class="product__img" src="../img/fmri.png" alt="Fabius-MRI">
+                        <div class="product__title"> 
+                            <h3>Fabius® MRI</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Fabius MRI ha sido diseñado específicamente para ser utilizado en entornos magnéticos y está certificado para potencias de campo de hasta 40 mteslas o 400 gauss. Esto proporciona una ventilación fiable con sistemas de MRI de 1,5 e incluso 3 teslas.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/fgs.png" alt="FabiusGS-Premium">
+                        <div class="product__title"> 
+                            <h3>Fabius® GS Premium</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Fabius GS premium es una estación de anestesia fácil de usar, altamente eficiente y preparada para el futuro. Presenta un diseño sólido con arquitectura modular además de un amplio abanico de posibilidades de ventilación. Adapte la estación Fabius® GS premium exactamente a sus necesidades.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/plusxl.png" alt="Fabiusplus-XL">
+                        <div class="product__title"> 
+                            <h3>Fabius® plus XL</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Combina la genuina ingeniería alemana de gran fiabilidad con una terapia de ventilación de alto rendimiento. Gracias a su concepto de diseño escalable, le permite elegir la estación de calidad que desea hoy sin perder de vista sus objetivos y necesidades futuras.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/fplus.png" alt="Fabius-Plus">
+                        <div class="product__title"> 
+                            <h3>Fabius® Plus</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Combine ventilación de calidad, con funcionamiento y mantenimiento sencillos y gran capacidad de expansión. Ofrece ventilación de alta calidad, más flexibilidad y diversas funciones de integración. Gracias a su diseño, que incluye una amplia gama de opciones y accesorios, puede personalizar para adaptarse a sus necesidades.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/vapor.png" alt="Vapor 2000">
+                        <div class="product__title"> 
+                            <h3>Vapor® 2000</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Desde hace más de 50 años, los vaporizadores de Dräger son la referencia en materia de calidad. Calidad, en la que confían médicos y personal sanitario alrededor de todo el mundo: hasta el día de hoy se han vendido más de 400.000 dispositivos a hospitales en todo el mundo.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/vapor2000.png" alt="D-Vapor/Vapor 3000">
+                        <div class="product__title"> 
+                            <h3>Vapor® 3000</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>La serie Vapor 3000 es mucho más que un simple recipiente de agentes anestésicos volátiles, y ahora es aún mejor que antes, especialmente en entornos oscuros. En combinación con la estación de anestesia Perseus A500, le puede ayudar incluso a monitorizar y planificar su anestesia para obtener una mayor eficiencia.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/vn500.png" alt="Babylog-VN500">
-                <div class="product__text">
-                    <h3>Babylog® VN500</h3>
-                    <p class="precio">$2.250.000</p>
-                    <p>Para las futuras generaciones. El Babylog® VN500 combina nuestros años de experiencia con lo último en tecnología. El resultado es una solución de ventilación completa e integrada para los pacientes más pequeños. Supera nuevas barreras hoy para estar preparado para el mañana.</p>
+                <div class="mt-3"  id="incubadoras">
+                    <h3 class="productgrid__category--title">Incubadoras</h3>
                 </div>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/o3000p.png" alt="Oxylog-3000plus">
-                <div class="product__text">
-                    <h3>Oxylog® 3000 plus</h3>
-                    <p class="precio">$740.800</p>
-                    <p>Responda al reto de la ventilación de transporte ofreciendo una ventilación de alto rendimiento con funciones como AutoFlow®, capnografía integrada y ventilación no invasiva, la unidad compacta y robusta le ayuda a tratar y transportar a sus pacientes de una manera segura y le proporciona el feedback que necesita sobre la efectividad de la terapia respiratoria.</p>
+                <div class="row">
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <span class="product__new">Nuevo</span>
+                        <img class="product__img" src="../img/tn500.png" alt="Babyleo-TN500">
+                        <div class="product__title"> 
+                            <h3>Babyleo® TN500</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Primer dispositivo IncuWarmer que proporciona termorregulación óptima a neonatos para cuidados en entornos abiertos y cerrados, así como en transición. Con la combinación de estas fuentes de calor, este dispositivo protege a sus pequeños pacientes para que puedan crecer mientras se simplifica su flujo de trabajo gracias a un acceso rápido y cómodo al bebé.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/c2000.png" alt="Isolette-C2000">
+                        <div class="product__title"> 
+                            <h3>Isolette® C2000</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Un sistema avanzado de termorregulación, controlado por el algoritmo PID, mantiene al bebé en un entorno estable. Una velocidad muy baja del aire sobre el área del colchón crea una zona tranquila que rodea al neonato.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/babytherm_8004.png" alt="Babytherm-8004">
+                        <div class="product__title"> 
+                            <h3>Babytherm® 8004</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>La última generación de sistemas de calentamiento infantil establece nuevos niveles en atención abierta al proporcionar a los bebés un entorno térmico único y asegurar un fácil acceso para prestarles la mejor atención posible. Es un sistema de calentamiento infantil de cuidados intensivos diseñado como dispositivo terapéutico para proporcionar calor a bebés nacidos a término y prematuros.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <span class="product__new">Nuevo</span>
+                        <img class="product__img" src="../img/gt5400.png" alt="Globe-Trotter-GT5400 ">
+                        <div class="product__title"> 
+                            <h3>Globe-Trotter® GT5400 </h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>El Globe-Trotter GT5400 es el resultado del continuo compromiso para desarrollar un sistema de transporte neonatal más seguro y estable que cumple con las normas globales y se traslada con suavidad de vehículo a vehículo, ya se trate de helicóptero, avión o ambulancia.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/ti500.png" alt="Isolette-TI500">
+                        <div class="product__title"> 
+                            <h3>Isolette® TI500</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Es una solución de incubadora completa y completamente equipada. Los cuidadores pueden seleccionar la temperatura, la humedad y la concentración de oxígeno del microentorno de la incubadora mientras la Isolette® ofrece datos continuos sobre la temperatura del recién nacido.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <span class="product__featured">Destacado</span>
+                        <img class="product__img" src="../img/8000p.png" alt="Isolette-8000">
+                        <div class="product__title"> 
+                            <h3>Isolette® 8000</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Dräger establece un estándar de regulación térmica con un abanico de características de rendimiento diseñadas para ofrecer un entorno estable y protegido para el bebé. Para asegurar que se mantiene la zona térmicamente neutral, la Isolette 8000 le permite controlar de manera continua la temperatura corporal central y periférica.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/ti500gt.png" alt="TI500-Globe-Trotter">
+                        <div class="product__title"> 
+                            <h3>TI500 Globe-Trotter®</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>El sistema de transporte neonatal TI500 Globe-Trotter se ha diseñado para transportar a pacientes pediátricos en un entorno térmico neutro, ofreciendo ventilación integrada. El sistema puede configurarse con analizadores de ventilación y oxígeno para adaptarse a las necesidades específicas de cada paciente.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/o2000p.png" alt="Oxylog-2000plus">
-                <div class="product__text">
-                    <h3>Oxylog® 2000 plus</h3>
-                    <p class="precio">$650.300</p>
-                    <p>Aumente su rendimiento e incremente las posibilidades de monitorización y ventilación con una amplia gama de básicos modernos de ventilación, un diseño robusto y compacto y un funcionamiento simple e intuitivo para todas las necesidades de transporte y ventilación de emergencia.</p>
+                <div class="mt-3"  id="monitores">
+                    <h3 class="productgrid__category--title">Monitores</h3>
                 </div>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/carina.png" alt="Carina">
-                <div class="product__text">
-                    <h3>Carina®</h3>
-                    <p class="precio">$540.600</p>
-                    <p>Diseñado para la ventilación no invasiva: con su excepcional tecnología SyncPlus® y su función de ventilación no invasiva (NIV) extendida, el práctico Dräger Carina® ofrece una ventilación sencilla y fiable y, gracias a su diseño compacto, puede usarse durante el traslado de pacientes.</p>
+                <div class="row">
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <span class="product__featured">Destacado</span>
+                        <img class="product__img" src="../img/acs.png" alt="Infinity-Acute-Care-System">
+                        <div class="product__title"> 
+                            <h3>Infinity® Acute Care System</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Mejore su flujo de trabajo con Infinity Acute Care System. Su monitor multiparamétrico se integra con la estación de trabajo en red para mostrar las constantes vitales en tiempo real y acceder a los sistemas clínicos del hospital y a las aplicaciones de gestión de datos. Se obtiene así información detallada sobre el paciente para un riguroso análisis.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/delta.png" alt="Infinity-Delta">
+                        <div class="product__title"> 
+                            <h3>Infinity® Delta</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Sirve como monitor de cabecera y monitor de transporte para monitorizar de forma continua al paciente en todo el hospital. Pueden mostrar un conjunto completo de parámetros vitales, incluido ECG de 3, 5, 6 y 12 derivaciones, respiración, análisis del segmento ST, etCO2, BISx™, EEG, varias temperaturas, presión sanguínea invasiva y no invasiva y arritmias completas.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <span class="product__new">Nuevo</span>
+                        <img class="product__img" src="../img/vista120.png" alt="Vista-120">
+                        <div class="product__title"> 
+                            <h3>Vista 120</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>El sistema de monitorización central Vista 120 es fácil de usar y le permite monitorizar las constantes vitales de hasta 64 pacientes conectados a los monitores de cabecera de Vista 120, lo que agiliza el trabajo del personal del hospital y mejora la seguridad del paciente.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/gammaxl.png" alt="Infinity-Gamma-XL">
+                        <div class="product__title"> 
+                            <h3>Infinity® Gamma XL</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Es un monitor de signos vitales compacto que puede funcionar como dispositivo independiente o como parte de la red Infinity. Proporciona un conjunto completo de los parámetros utilizados con mayor frecuencia para la monitorización de pacientes adultos, pediátricos y neonatales, y resulta perfecto para entornos críticos de baja a mediana gravedad.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/kappa.png" alt="Infinity-Kappa">
+                        <div class="product__title"> 
+                            <h3>Infinity® Kappa</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Es un monitor de signos vitales estacionario que admite todos los tipos de paciente, niveles de gravedad y áreas de cuidados. Diseñado para la monitorización fija en la cabecera, el monitor estándar incluye una unidad básica CPU que es compatible con las pantallas planas de calidad médica estándar</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/omegas.png" alt="Infinity-Omega-S">
+                        <div class="product__title"> 
+                            <h3>Infinity Omega-S</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Omega-S es la innovadora solución de monitorización de pacientes de Dräger que integra un monitor de la serie Infinity Kappa y una pantalla auxiliar con la estación de trabajo Infinity C700 for IT y el software de Infinity Explorer.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/centralstation.png" alt="Infinity-CentralStation-Wide">
+                        <div class="product__title"> 
+                            <h3>Infinity® CentralStation Wide</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Visualizar datos clínicos en tiempo real y de forma retrospectiva ayuda a tomar las decisiones más eficaces para el cuidado del paciente. Infinity® CentralStation Wide muestra los signos hemodinámicos vitales junto con valores de monitores, respiradores y dispositivos de anestesia conectados.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/vamosp.png" alt="Vamos-Plus">
+                        <div class="product__title"> 
+                            <h3>Vamos® / Vamos® plus</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Para aplicar una anestesia dirigida y segura es necesario contar con monitores de gases anestésicos eficientes. Esto es exactamente lo que proporcionan los monitores de gases anestésicos compactos Vamos® y Vamos® plus, ya que muestran de manera fiable las concentraciones de dióxido de carbono, óxido nitroso y gases anestésicos volátiles.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/scio.png" alt="Scio-Four">
+                        <div class="product__title"> 
+                            <h3>Familia Scio Four</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>O2, CO2, N2O y anestésicos volátiles de un vistazo: La familia Scio Four puede usarse con un monitor Infinity® en cualquier lugar que usted necesite.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/ove300.png" alt="Oxylog-VE300">
-                <div class="product__text">
-                    <h3>Oxylog® VE300</h3>
-                    <p class="precio">$470.800</p>
-                    <p>El sencillo y práctico ventilador Oxylog® VE300 de Dräger está diseñado para hacer frente a los retos en los servicios de atención de emergencia preclínica. Gracias a su tecnología de ventilación fiable, su robustez y su funcionamiento intuitivo, proporciona una asistencia fiable y segura durante la atención de emergencias.</p>
+                <div class="mt-3"  id="ecografos">
+                    <h3 class="productgrid__category--title">Ecografía</h3>
                 </div>
-            </div>
-
-            <div></div>
-            <div></div>
-            
-            <div class="product">
-                <img class="product__img" src="../img/zeus.png" alt="Zeus-Infinity-Empowered">
-                <h3>Zeus® Infinity Empowered</h3>
-                <p class="precio">$3.450.000</p>
-                <p>Funciones de ventilación protectora pulmonar, tecnología que permite ahorrar costes en el suministro de gases, herramientas para la toma de decisiones y monitorización exhaustiva.
-                    Zeus IE integra todo lo anterior en una estación de anestesia avanzada. Gracias a ello, puede mejorar los resultados clínicos y la eficiencia del flujo de trabajo, y ahorrar costes a lo largo del proceso de anestesia.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/a500.png" alt="Perseus-A500">
-                <h3>Perseus® A500</h3>
-                <p class="precio">$2.900.000</p>
-                <p>Respirador de quirófano avanzado Combine la tecnología de ventilación más avanzada con las últimas mejoras en ergonomía e integración de sistemas con una plataforma de anestesia vanguardista, diseñada con expertos de todo el mundo para agilizar el flujo de trabajo de anestesia.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/primus.png" alt="Primus">
-                <h3>Primus®</h3>
-                <p class="precio">$1.800.500</p>
-                <p>La estación Dräger Primus® ha sido diseñada para ser nada más y nada menos que su ayudante personal de anestesia. Es una combinación de diseño puesto a prueba a lo largo del tiempo con una tecnología de vanguardia, creada para satisfacer la demanda de una solución de anestesia completa e innovadora en el cada vez más complejo entorno médico actual.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/fmri.png" alt="Fabius-MRI">
-                <h3>Fabius® MRI</h3>
-                <p class="precio">$2.150.000</p>
-                <p>Fabius MRI ha sido diseñado específicamente para ser utilizado en entornos magnéticos y está certificado para potencias de campo de hasta 40 mteslas o 400 gauss. Esto proporciona una ventilación fiable con sistemas de MRI de 1,5 e incluso 3 teslas.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/fgs.png" alt="FabiusGS-Premium">
-                <h3>Fabius® GS Premium</h3>
-                <p class="precio">$1.890.000</p>
-                <p>Fabius GS premium es una estación de anestesia fácil de usar, altamente eficiente y preparada para el futuro. Presenta un diseño sólido con arquitectura modular además de un amplio abanico de posibilidades de ventilación. Adapte la estación Fabius® GS premium exactamente a sus necesidades.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/plusxl.png" alt="Fabiusplus-XL">
-                <h3>Fabius® plus XL</h3>
-                <p class="precio">$1.750.000</p>
-                <p>Combina la genuina ingeniería alemana de gran fiabilidad con una terapia de ventilación de alto rendimiento. Gracias a su concepto de diseño escalable, le permite elegir la estación de calidad que desea hoy sin perder de vista sus objetivos y necesidades futuras.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/fplus.png" alt="Fabius-Plus">
-                <h3>Fabius® Plus</h3>
-                <p class="precio">$1.500.000</p>
-                <p>Combine ventilación de calidad, con funcionamiento y mantenimiento sencillos y gran capacidad de expansión. Ofrece ventilación de alta calidad, más flexibilidad y diversas funciones de integración. Gracias a su diseño, que incluye una amplia gama de opciones y accesorios, puede personalizar para adaptarse a sus necesidades.</p>
-            </div>
-
-            <div></div>
-
-            <div class="product">
-                <img class="product__img" src="../img/tn500.png" alt="Babyleo-TN500">
-                <h3>Babyleo® TN500</h3>
-                <p class="precio">$1.350.000</p>
-                <p>Primer dispositivo IncuWarmer que proporciona termorregulación óptima a neonatos para cuidados en entornos abiertos y cerrados, así como en transición. Con la combinación de estas fuentes de calor, este dispositivo protege a sus pequeños pacientes para que puedan crecer mientras se simplifica su flujo de trabajo gracias a un acceso rápido y cómodo al bebé.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/c2000.png" alt="Isolette-C2000">
-                <h3>Isolette® C2000</h3>
-                <p class="precio">$900.550</p>
-                <p>Un sistema avanzado de termorregulación, controlado por el algoritmo PID, mantiene al bebé en un entorno estable. Una velocidad muy baja del aire sobre el área del colchón crea una zona tranquila que rodea al neonato.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/babytherm_8004.png" alt="Babytherm-8004">
-                <h3>Babytherm® 8004</h3>
-                <p class="precio">$1.430.000</p>
-                <p>La última generación de sistemas de calentamiento infantil establece nuevos niveles en atención abierta al proporcionar a los bebés un entorno térmico único y asegurar un fácil acceso para prestarles la mejor atención posible. Es un sistema de calentamiento infantil de cuidados intensivos diseñado como dispositivo terapéutico para proporcionar calor a bebés nacidos a término y prematuros.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/gt5400.png" alt="Globe-Trotter-GT5400 ">
-                <h3>Globe-Trotter® GT5400 </h3>
-                <p class="precio">$2.000.000</p>
-                <p>El Globe-Trotter GT5400 es el resultado del continuo compromiso para desarrollar un sistema de transporte neonatal más seguro y estable que cumple con las normas globales y se traslada con suavidad de vehículo a vehículo, ya se trate de helicóptero, avión o ambulancia.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/ti500.png" alt="Isolette-TI500">
-                <h3>Isolette® TI500</h3>
-                <p class="precio">$1.650.900</p>
-                <p>Es una solución de incubadora completa y completamente equipada. Los cuidadores pueden seleccionar la temperatura, la humedad y la concentración de oxígeno del microentorno de la incubadora mientras la Isolette® ofrece datos continuos sobre la temperatura del recién nacido.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/8000p.png" alt="Isolette-8000">
-                <h3>Isolette® 8000</h3>
-                <p class="precio">$2.200.000</p>
-                <p>Dräger establece un estándar de regulación térmica con un abanico de características de rendimiento diseñadas para ofrecer un entorno estable y protegido para el bebé. Para asegurar que se mantiene la zona térmicamente neutral, la Isolette 8000 le permite controlar de manera continua la temperatura corporal central y periférica.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/ti500gt.png" alt="TI500-Globe-Trotter">
-                <h3>TI500 Globe-Trotter®</h3>
-                <p class="precio">$2.100.300</p>
-                <p>El sistema de transporte neonatal TI500 Globe-Trotter se ha diseñado para transportar a pacientes pediátricos en un entorno térmico neutro, ofreciendo ventilación integrada. El sistema puede configurarse con analizadores de ventilación y oxígeno para adaptarse a las necesidades específicas de cada paciente.</p>
-            </div>
-
-            <div></div>
-
-            <div class="product">
-                <img class="product__img" src="../img/acs.png" alt="Infinity-Acute-Care-System">
-                <h3>Infinity® Acute Care System</h3>
-                <p class="precio">$675.900</p>
-                <p>Mejore su flujo de trabajo con Infinity Acute Care System. Su monitor multiparamétrico se integra con la estación de trabajo en red para mostrar las constantes vitales en tiempo real y acceder a los sistemas clínicos del hospital y a las aplicaciones de gestión de datos. Se obtiene así información detallada sobre el paciente para un riguroso análisis.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/delta.png" alt="Infinity-Delta">
-                <h3>Infinity® Delta</h3>
-                <p class="precio">$556.000</p>
-                <p>Sirve como monitor de cabecera y monitor de transporte para monitorizar de forma continua al paciente en todo el hospital. Pueden mostrar un conjunto completo de parámetros vitales, incluido ECG de 3, 5, 6 y 12 derivaciones, respiración, análisis del segmento ST, etCO2, BISx™, EEG, varias temperaturas, presión sanguínea invasiva y no invasiva y arritmias completas.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/vista120.png" alt="Vista-120">
-                <h3>Vista 120</h3>
-                <p class="precio">$407.300</p>
-                <p>El sistema de monitorización central Vista 120 es fácil de usar y le permite monitorizar las constantes vitales de hasta 64 pacientes conectados a los monitores de cabecera de Vista 120, lo que agiliza el trabajo del personal del hospital y mejora la seguridad del paciente.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/gammaxl.png" alt="Infinity-Gamma-XL">
-                <h3>Infinity® Gamma XL</h3>
-                <p class="precio">$730.500</p>
-                <p>Es un monitor de signos vitales compacto que puede funcionar como dispositivo independiente o como parte de la red Infinity. Proporciona un conjunto completo de los parámetros utilizados con mayor frecuencia para la monitorización de pacientes adultos, pediátricos y neonatales, y resulta perfecto para entornos críticos de baja a mediana gravedad.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/kappa.png" alt="Infinity-Kappa">
-                <h3>Infinity® Kappa</h3>
-                <p class="precio">$845.000</p>
-                <p>Es un monitor de signos vitales estacionario que admite todos los tipos de paciente, niveles de gravedad y áreas de cuidados. Diseñado para la monitorización fija en la cabecera, el monitor estándar incluye una unidad básica CPU que es compatible con las pantallas planas de calidad médica estándar</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/omegas.png" alt="Infinity-Omega-S">
-                <h3>Infinity Omega-S</h3>
-                <p class="precio">$765.000</p>
-                <p>Omega-S es la innovadora solución de monitorización de pacientes de Dräger que integra un monitor de la serie Infinity Kappa y una pantalla auxiliar con la estación de trabajo Infinity C700 for IT y el software de Infinity Explorer.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/centralstation.png" alt="Infinity-CentralStation-Wide">
-                <h3>Infinity® CentralStation Wide</h3>
-                <p class="precio">$965.000</p>
-                <p>Visualizar datos clínicos en tiempo real y de forma retrospectiva ayuda a tomar las decisiones más eficaces para el cuidado del paciente. Infinity® CentralStation Wide muestra los signos hemodinámicos vitales junto con valores de monitores, respiradores y dispositivos de anestesia conectados.</p>
-            </div>
-
-            <div></div>
-
-            <div class="product">
-                <img class="product__img" src="../img/digieye.png" alt="DigiEye-280">
-                <h3>DigiEye 280 </h3>
-                <p class="precio">$3.400.000</p>
-                <p>DigiEye 280 es un sistema de radiografía digital sobre suelo que cuenta con la innovadora tecnología de Mindray. Un detector plano portátil diseñado para cumplir todos sus requisitos en materia clínica.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/m6.png" alt="Mindray-m6">
-                <h3>Mindray M6</h3>
-                <p class="precio">$1.165.000</p>
-                <p>Permite el uso de múltiples ángulos escaneados para formar una sola imagen, lo que permite obtener una resolución de contraste mejorada y visualización mejorada.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/r7.png" alt="Resona-7">
-                <h3>Resona 7</h3>
-                <p class="precio">$1.700.000</p>
-                <p>Gracias a la innovadora plataforma ZST+, el Resona 7 evoluciona continuamente con las  tecnologías más avanzada para cumplir con las demandas más exigentes de diagnóstico. Más importante aún, está diseñado con la comprensión de que la sabiduría de los expertos es lo más valioso, teniendo un socio más inteligente para una mayor velocidad y confianza. </p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/centralstation.png" alt="Infinity-Omega-S">
-                <h3>Infinity Omega-S</h3>
-                <p class="precio">$765.000</p>
-                <p>Omega-S es la innovadora solución de monitorización de pacientes de Dräger que integra un monitor de la serie Infinity Kappa y una pantalla auxiliar con la estación de trabajo Infinity C700 for IT y el software de Infinity Explorer.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/centralstation.png" alt="Infinity-Omega-S">
-                <h3>Infinity Omega-S</h3>
-                <p class="precio">$765.000</p>
-                <p>Omega-S es la innovadora solución de monitorización de pacientes de Dräger que integra un monitor de la serie Infinity Kappa y una pantalla auxiliar con la estación de trabajo Infinity C700 for IT y el software de Infinity Explorer.</p>
-            </div>
-            <div class="product">
-                <img class="product__img" src="../img/centralstation.png" alt="Infinity-Omega-S">
-                <h3>Infinity Omega-S</h3>
-                <p class="precio">$765.000</p>
-                <p>Omega-S es la innovadora solución de monitorización de pacientes de Dräger que integra un monitor de la serie Infinity Kappa y una pantalla auxiliar con la estación de trabajo Infinity C700 for IT y el software de Infinity Explorer.</p>
+                <div class="row">
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/m9.png " alt="Mindray-M9">
+                        <div class="product__title"> 
+                            <h3>Mindray M9</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Permite el uso de las señales de eco que tradicionalmente no son usadas de los haces adyacentes para formar un haz de imágen más fino y fuerte, proporcionando una mejor resolución de la imágen y una mayor penetración.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/mx7.png" alt="Mindray-MX7">
+                        <div class="product__title"> 
+                            <h3>Mindray MX7</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>El MX7 facilita diagnósticos precisos basados en la plataforma de vanguardia ZST+, al tiempo que facilita un flujo de trabajo eficiente con una pantalla táctil totalmente personalizable, una unidad principal ultraligera y la extraordinaria duración de la batería de 8 horas, que permiten utilizarlo en cualquier entorno clínico móvil. Además, se pueden incorporar funciones avanzadas y herramientas de análisis en su rutina diaria.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/dc40.png" alt="Mindray-DC40">
+                        <div class="product__title"> 
+                            <h3>Mindray DC-40</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Nuevo ecógrafo DC-40 Crystal con una experiencia de Cristal Puro. Smart OB proporciona mediciones automáticas precisas para los parámetros fetales examinados con mayor frecuencia, incluyendo BPD, OFD, HC, AC y FL.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/dp30.png" alt="Mindray-DP30">
+                        <div class="product__title"> 
+                            <h3>Mindray DP-30</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Con diseño ergonómico y liviano, el DP-30 puede acompañarlo donde sea necesario. Rompiendo la barrera entre los sistemas de diagnóstico por ultrasonido ByN y Doppler, DP-30 es un sistema avanzado equipado con Power Doppler y PW Doppler le brinda más posibilidades en diversas aplicaciones clínicas.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/m6.png" alt="Mindray-m6">
+                        <div class="product__title"> 
+                            <h3>Mindray M6</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Permite el uso de múltiples ángulos escaneados para formar una sola imagen, lo que permite obtener una resolución de contraste mejorada y visualización mejorada.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <span class="product__featured">Destacado</span>
+                        <img class="product__img" src="../img/r7.png" alt="Resona-7">
+                        <div class="product__title"> 
+                            <h3>Resona 7</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Gracias a la innovadora plataforma ZST+, el Resona 7 evoluciona continuamente con las  tecnologías más avanzada para cumplir con las demandas más exigentes de diagnóstico. Más importante aún, está diseñado con la comprensión de que la sabiduría de los expertos es lo más valioso, teniendo un socio más inteligente para una mayor velocidad y confianza. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3"  id="varios">
+                    <h3 class="productgrid__category--title">Varios</h3>
+                </div>
+                <div class="row">
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <span class="product__new">Nuevo</span>
+                        <img class="product__img" src="../img/digieye.png" alt="DigiEye-280">
+                        <div class="product__title"> 
+                            <h3>DigiEye 280 </h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>DigiEye 280 es un sistema de radiografía digital sobre suelo que cuenta con la innovadora tecnología de Mindray. Un detector plano portátil diseñado para cumplir todos sus requisitos en materia clínica.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/drugtest.png" alt="Drugtest 5000">
+                        <div class="product__title"> 
+                            <h3>Drugtest® 5000</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Sin pipeteo, ni goteos, ni control de tiempos: Con el Dräger DrugTest® 5000, la detección de drogas es rápida y sencilla. La muestra de saliva recogida se puede analizar de inmediato para obtener resultados precisos in situ.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/bili.png" alt="JM-105">
+                        <div class="product__title"> 
+                            <h3>JM-105</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>El bilirrubinómetro JM-105 de Dräger le proporciona un funcionamiento de calidad y económico durante toda su vida útil. De este modo mejorará la eficiencia de su programa de detección de ictericia, lo que le permitirá ahorrar tiempo y dinero, así como ofrecer los mejores cuidados a sus pacientes.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/coronis.png" alt="Coronis Uniti">
+                        <div class="product__title"> 
+                            <h3>Coronis Uniti®</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>Conozca el Coronis Uniti®. El único monitor específicamente diseñado tanto para PACS como para mamografías. Único en su representación de colores y escalas de grises calibrados. Excepcional en su funcionalidad 2D y 3D. Capaz de ofrecer imágenes tanto estáticas como dinámicas. Todo ello para cambiar definitivamente su forma de trabajar.</p>
+                        </div>
+                    </div>
+                    <div class="product mx-auto px-lg-2 mb-5 mb-lg-4">
+                        <img class="product__img" src="../img/im300.png" alt="Im300">
+                        <div class="product__title"> 
+                            <h3>Infinity® M300</h3>
+                            <a href="../pages/contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                        <div class="product__description">
+                            <p>El monitor Infinity® M300 ofrece una vigilancia telemétrica continua del paciente gracias a la red Wi-Fi ya existente en el hospital. El tamaño compacto facilita el transporte del paciente y la pantalla en color muestra las constantes vitales y las curvas de forma continua.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="footergrid">
+            <div class="row pt-5 me-0">
+                <div class="col-12 col-lg-4 text-center">
+                    <div class="footergrid__mapframe mx-auto mb-3 mb-lg-0 ps-2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1602.378086775274!2d-62.252665674764074!3d-38.705801173323735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1614532754200!5m2!1ses-419!2sar"   style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                <p>Tel: +54 11 12345678. Calle 123,</p>
+                <p>CP8000, Bahía Blanca, Buenos Aires</p>
+                </div>
+                <div class="footergrid__item2 col-12 col-lg-4 text-center mt-5 mt-lg-0 mb-4 mb-lg-0">
+                    <a href="index.html"><img class="footergrid__logo" src="../img/logo_im.png" alt="logo_im"/></a>
+                    <ul class="footergrid__item2--liststyle">
+                        <li><a class="footergrid__item2--linkstyle" href="../index.html">Inicio</a></li>
+                        <li><a class="footergrid__item2--linkstyle" href="empresa.html">Empresa</a></li>
+                        <li><a class="footergrid__item2--linkstyle" href="productos.html">Productos</a></li>
+                        <li><a class="footergrid__item2--linkstyle" href="servicios.html">Servicios</a></li>
+                        <li><a class="footergrid__item2--linkstyle" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4 text-center mt-5 mt-lg-0">
+                    <div class="row justify-content-center justify-content-lg-end pb-5 pe-lg-5">
+                        <div class="col-2">
+                            <a target="blank" href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                        </div>
+                        <div class="col-2">
+                            <a target="blank" href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="col-2">
+                            <a target="blank" href="http://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class=" row pb-3 pb-lg-5 justify-content-center justify-content-md-end align-items-center pe-md-5">
+                        <div class="pb-2 pb-lg-0 col-md-7 ps-md-4">
+                            <p>Realizá tu consulta</p>
+                        </div>
+                        <div class="col-md-2 pb-2">
+                            <a target="blank" href="http://whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                        </div> 
+                    </div>
     
-            <div class="footergrid__item1">
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1602.378086775274!2d-62.252665674764074!3d-38.705801173323735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1614532754200!5m2!1ses-419!2sar" width="200" height="90" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                 </div>
-                 <p>Tel: +54 11 12345678. Calle 123,</p>
-                 <p>CP8000, Bahía Blanca, Buenos Aires</p>
+                    <div class=" row pb-3 justify-content-center justify-content-md-end align-items-center pe-md-5">
+                        <div class="col-md-7 me-md-5 me-xl-0">
+                            <p>info@ingenieriamedica.com.ar</p>
+                        </div>
+                        <div class="col-md-2 pb-2">
+                            <a target="blank" href="http://outlook.com"><i class="fas fa-envelope"></i></a>
+                        </div> 
+                    </div>
+                </div>
             </div>
 
-            <div class="footergrid__item2">
-                <a href="../index.html"><img class="footergrid__logo" src="../img/logo_im.png" alt="logo_im" width="120"/></a>
-                <ul class="footergrid__item2--columnflex">
-                    <li><a class="footergrid__item2--linkstyle" href="../index.html">Inicio</a></li>
-                    <li><a class="footergrid__item2--linkstyle" href="empresa.html">Empresa</a></li>
-                    <li><a class="footergrid__item2--linkstyle" href="productos.html">Productos</a></li>
-                    <li><a class="footergrid__item2--linkstyle" href="servicios.html">Servicios</a></li>
-                    <li><a class="footergrid__item2--linkstyle" href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-
-            <div class="footergrid__item3">
-                <div class="footergrid__item3--paddingflex">
-                    <p>Seguinos en redes sociales!</p>
-                    <a target="blank" href="http://facebook.com"><img src="../img/logo_facebook.png" alt="logo-facebook" height="20"/></a>
-                    <a target="blank" href="http://instagram.com"><img src="../img/logo_instagram.png" alt="logo-instagram" height="20"/></a>
-                    <a target="blank" href="http://twitter.com"><img src="../img/logo_tweeter.png" alt="logo-tweeter" height="20"/></a>
+            <div class="row me-0">
+                <div class="col-12 text-center">
+                    <p>Todos los derechos reservados. 2021 Ingeniería Médica©</p>
                 </div>
-                
-                <div class="footergrid__item3--paddingflex">
-                    <p>Realizá tus consultas por Whatsapp</p>
-                    <a target="blank" href="http://whatsapp.com"><img src="../img/logo_whatsapp.png" alt="logo-whatsapp" height="20"/></a>
-                </div>
-
-                <div class="footergrid__item3--paddingflex">
-                    <p>Solicitá tu presupuesto por mail</p>
-                    <a target="blank" href="http://outlook.com"><img src="../img/logo_mail.png" alt="logo-mail" height="20"/></a>
-                </div>
-
-            </div>
-
-            <div class="footergrid__item4">
-                <p>Todos los derechos reservados. 2021 Ingeniería Médica©</p>
             </div>
         </div>
     </footer>
